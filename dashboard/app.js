@@ -517,7 +517,7 @@ function testPersonalizationAPI() {
   responseBox.style.color = "var(--color-text-sub)";
 
   // Connects to the live Railway backend deployment URL
-  const apiUrl = `https://virtuous-possibility-production.up.railway.app/v1/user/discovery-recommendations?user_cohort=${cohort}&cart_item=${cartItem}`;
+  const apiUrl = `https://zepto-ai-search-engine-production.up.railway.app/v1/user/discovery-recommendations?user_cohort=${cohort}&cart_item=${cartItem}`;
 
   fetch(apiUrl)
     .then(res => {
