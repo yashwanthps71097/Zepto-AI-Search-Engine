@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zepto AI Discovery Engine - PM Growth Workspace</title>
+  <link rel="stylesheet" href="styles.css?v=2.4">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="light-theme">
+  
+  <div class="workspace-layout">
+    
+    <!-- LEFT SIDEBAR NAVIGATION -->
+    <aside class="sidebar">
+      <div class="sidebar-brand">
+        <div class="zepto-logo-dot"></div>
+        <h2>zepto.ai</h2>
+      </div>
+      <nav class="sidebar-nav">
+        <button class="nav-item active" data-tab="dashboard">
+          <span class="icon">📊</span> Dashboard
+        </button>
+        <button class="nav-item" data-tab="datasources">
+          <span class="icon">🔌</span> Data Sources
+        </button>
+        <button class="nav-item" data-tab="insights">
+          <span class="icon">💡</span> AI Insights
+        </button>
+        <button class="nav-item" data-tab="behavior">
+          <span class="icon">📈</span> Customer Behavior
+        </button>
+        <button class="nav-item" data-tab="segments">
+          <span class="icon">👥</span> User Segments
+        </button>
+        <button class="nav-item" data-tab="opportunities">
+          <span class="icon">🎯</span> Category Opportunities
+        </button>
+        <button class="nav-item" data-tab="actions">
+          <span class="icon">⚡</span> Growth Actions
+        </button>
+      </nav>
+      <div class="sidebar-footer">
+        <span class="version-tag">Zepto PM Workspace v2.3</span>
+      </div>
+    </aside>
+
+    <!-- MAIN CONTENT AREA -->
+    <main class="main-content">
+      
+      <!-- TOP NAVIGATION BAR -->
+      <header class="top-nav">
+        <div class="nav-titles">
+          <h1 id="viewTitleHeader">Zepto AI Discovery Engine</h1>
+          <p class="subtitle" id="viewSubtitleHeader">AI-powered Customer Insights & Category Growth Intelligence</p>
+        </div>
+        
+        <div class="nav-actions">
+          <div class="date-selector" id="currentDateDisplay">
+            📅 Loading...
+          </div>
+          <button class="btn btn-export" id="exportReportBtn">Export Report</button>
+          <div class="bell-icon" onclick="toast('Notifications cleared')">🔔</div>
+          <div class="profile-container">
+            <div class="profile-avatar">PM</div>
+            <div class="profile-info">
+              <div class="profile-name">YASHWANTH P S</div>
+              <div class="profile-role">Product Owner</div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- TAB VIEW 1: DASHBOARD VIEW -->
+      <div id="dashboardView" class="tab-view-content">
+        <!-- OVERVIEW CARDS ROW -->
+        <section class="overview-grid">
+          <div class="stat-card">
+            <div class="stat-header">
+              <span class="stat-title">Conversations Analyzed</span>
+              <span class="trend positive">↑ +5% vs Sep</span>
+            </div>
+            <div class="stat-value">128K+</div>
+            <div class="stat-sub">Across 13 target channels</div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-header">
+              <span class="stat-title">AI Insight Confidence</span>
+              <span class="trend positive" style="color: #10B981; background: rgba(16, 185, 129, 0.1);">92% Conf.</span>
+            </div>
+            <div class="stat-value">92%</div>
+            <div class="stat-sub">Validated offline evaluation</div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-header">
+              <span class="stat-title">Emerging Needs</span>
+              <span class="trend warning">24 Needs</span>
+            </div>
+            <div class="stat-value">24</div>
+            <div class="stat-sub">Trending across customer forums</div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-header">
+              <span class="stat-title">Categories Tracked</span>
+              <span class="trend neutral">18 Active</span>
+            </div>
+            <div class="stat-value">18</div>
+            <div class="stat-sub">Catalog discovery categories</div>
+          </div>
+        </section>
+
+        <!-- INTERACTIVE AI PM ASSISTANT PANEL -->
+        <section class="assistant-panel">
+          <div class="panel-header">
+            <h3>🤖 Interactive AI Discovery Assistant</h3>
+            <span class="badge">Groq LPU Q&A Engine</span>
+          </div>
+          <p class="panel-desc">Type any question regarding Zepto user feedback, shopping habits, category barriers, or unmet customer needs:</p>
+          
+          <div class="ask-bar">
+            <input type="text" id="aiQuestionInput" placeholder="Type your question here (e.g. Why do users hesitate to buy pet food online? What prevents exploration?)" />
+            <button id="askAiBtn" class="btn btn-primary">Ask AI Assistant</button>
+          </div>
+
+          <div class="preset-pills">
+            <span class="preset-label">Quick Questions:</span>
+            <button class="pill" onclick="askPreset('Why do users repeatedly buy from the same categories?')">Why repetitive buying?</button>
+            <button class="pill" onclick="askPreset('What prevents users from exploring new categories?')">What prevents exploration?</button>
+            <button class="pill" onclick="askPreset('How do users discover products today?')">How users discover today?</button>
+            <button class="pill" onclick="askPreset('What role do habits play in shopping behavior?')">Role of habits?</button>
+            <button class="pill" onclick="askPreset('What information do users need before trying a new category?')">Info needed before trial?</button>
+          </div>
+
+          <!-- Live Answer Response display box -->
+          <div id="aiResponseBox" class="ai-response-box hidden">
+            <div class="response-header">
+              <span class="ai-title">Groq AI Assistant Response</span>
+              <span class="response-time">Inference: 38ms</span>
+            </div>
+            <h4 id="responseQuestionTitle" class="response-question"></h4>
+            <div id="responseBodyText" class="response-body"></div>
+          </div>
+        </section>
+
+        <!-- FEEDBACK INTELLIGENCE & CHARTS LAYOUT -->
+        <div class="dashboard-grid">
+          
+          <!-- Left: Feedback Intelligence -->
+          <div class="grid-card feedback-intelligence">
+            <div class="card-header">
+              <h3>📢 AI Feedback Intelligence</h3>
+              <span class="source-count">13 Sources Connected</span>
+            </div>
+            <div class="sentiment-box">
+              <div class="sentiment-bar-labels">
+                <span>Positive (72%)</span>
+                <span>Neutral (15%)</span>
+                <span>Negative (13%)</span>
+              </div>
+              <div class="sentiment-track">
+                <div class="track-fill positive interactive-segment" data-type="sentiment" data-name="Positive Feedback" data-value="72% (92.4K reviews)" style="width: 72%; cursor: pointer;"></div>
+                <div class="track-fill neutral interactive-segment" data-type="sentiment" data-name="Neutral Feedback" data-value="15% (19.2K reviews)" style="width: 15%; cursor: pointer;"></div>
+                <div class="track-fill negative interactive-segment" data-type="sentiment" data-name="Negative Feedback" data-value="13% (16.6K reviews)" style="width: 13%; cursor: pointer;"></div>
+              </div>
+            </div>
+            <div class="connected-sources-grid">
+              <span class="source-tag">Google Play Reviews</span>
+              <span class="source-tag">App Store Reviews</span>
+              <span class="source-tag">Reddit Discussions</span>
+              <span class="source-tag">Social Media</span>
+              <span class="source-tag">Community Forums</span>
+              <span class="source-tag">Customer Support Feedback</span>
+            </div>
+            
+            <div class="trending-topics-section" style="margin-top: 20px; border-top: 1px solid var(--glass-border); padding-top: 16px;">
+              <h4 style="font-size: 12px; font-weight: 700; color: #FFF; margin-bottom: 10px; display: flex; align-items: center; gap: 6px;">
+                <span>🔥</span> Trending AI Topic Tags
+              </h4>
+              <div class="connected-sources-grid">
+                <span class="source-tag interactive-segment" data-name="Organic Freshness Concern" data-value="Negative Sentiment (32 mentions in reviews)" style="background: rgba(255, 61, 0, 0.1); border-color: rgba(255, 61, 0, 0.2); color: #FF3D00; cursor: pointer;">#OrganicFreshness</span>
+                <span class="source-tag interactive-segment" data-name="Checkout Speed Loop" data-value="Positive Sentiment (48 mentions in reviews)" style="background: rgba(0, 242, 254, 0.1); border-color: rgba(0, 242, 254, 0.2); color: #00F2FE; cursor: pointer;">#FastCheckout</span>
+                <span class="source-tag interactive-segment" data-name="Bundle Trial Packs" data-value="Neutral Sentiment (15 mentions in reviews)" style="background: rgba(255, 255, 255, 0.05); color: #FFF; cursor: pointer;">#TrialPacks</span>
+                <span class="source-tag interactive-segment" data-name="Diaper Safe Wipes" data-value="Positive Sentiment (25 mentions in reviews)" style="background: rgba(0, 242, 254, 0.1); border-color: rgba(0, 242, 254, 0.2); color: #00F2FE; cursor: pointer;">#Hypoallergenic</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Customer Behavior & Journey Funnel -->
+          <div class="grid-card behavior-insights">
+            <div class="card-header">
+              <h3>📈 Customer Discovery Journey Funnel</h3>
+            </div>
+            <div class="funnel-container">
+              <div class="funnel-stage stage-1 interactive-segment" data-type="funnel" data-name="Habitual Shopping" data-value="100% (128K Active Customers purchase weekly)" style="cursor: pointer;">
+                <span class="stage-name">1. Habitual Shopping (Weekly Groceries)</span>
+                <span class="stage-pct">100%</span>
+              </div>
+              <div class="funnel-stage stage-2 interactive-segment" data-type="funnel" data-name="Category Discovery" data-value="64% (82K customers exposed to cross-category cart hooks)" style="cursor: pointer;">
+                <span class="stage-name">2. Category Discovery Exposure (Cart Hook)</span>
+                <span class="stage-pct">64%</span>
+              </div>
+              <div class="funnel-stage stage-3 interactive-segment" data-type="funnel" data-name="Trial Pack Click" data-value="38% (48K click-through on trial-sized offerings)" style="cursor: pointer;">
+                <span class="stage-name">3. Trial Pack Click-through</span>
+                <span class="stage-pct">38%</span>
+              </div>
+              <div class="funnel-stage stage-4 interactive-segment" data-type="funnel" data-name="First Purchase" data-value="19.9% (25.4K completed first-time category checkout)" style="cursor: pointer;">
+                <span class="stage-name">4. First-time Category Purchase</span>
+                <span class="stage-pct">19.9%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SMART AI GENERATED INSIGHT CARDS -->
+        <section class="insights-section">
+          <h3 class="section-title">Smart AI Generated Insight Cards</h3>
+          <div class="insights-grid">
+            
+            <div class="insight-card">
+              <div class="insight-badge badge-high">🚀 High Impact</div>
+              <h4>"Users repeat grocery purchases because reordering is faster than exploring."</h4>
+              <p>10-minute convenience loops incentivize check-out speed over product browsing, causing users to bypass new category drawers.</p>
+              <div class="insight-footer">
+                <span>Confidence: 94%</span>
+                <span>Sources: 32K</span>
+              </div>
+            </div>
+
+            <div class="insight-card">
+              <div class="insight-badge badge-high">🚀 High Impact</div>
+              <h4>"Customers need reviews and trust signals before trying new categories."</h4>
+              <p>Freshness quality concern remains a key trial blocker for organic fresh fruits and premium cold chain dairy items.</p>
+              <div class="insight-footer">
+                <span>Confidence: 89%</span>
+                <span>Sources: 15K</span>
+              </div>
+            </div>
+
+            <div class="insight-card">
+              <div class="insight-badge badge-vhigh">🔥 Very High Impact</div>
+              <h4>"Personal Care has high cross-category potential among grocery buyers."</h4>
+              <p>Daily grocery shoppers show strong affinity for premium face wipes and serums when paired with snack recommendations.</p>
+              <div class="insight-footer">
+                <span>Confidence: 91%</span>
+                <span>Sources: 21K</span>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- USER SEGMENTATION & OPPORTUNITIES -->
+        <div class="dashboard-grid" style="margin-top: 32px;">
+          
+          <!-- Left: User Segments -->
+          <div class="grid-card">
+            <div class="card-header">
+              <h3>👥 User Segmentation Breakdown</h3>
+            </div>
+            <div class="segment-list">
+              <div class="segment-item interactive-segment" data-type="cohort" data-name="Routine Buyers" data-value="50% size. Basket Size: INR 350. Purchase Frequency: 3.2x/week." style="cursor: pointer;">
+                <div class="segment-info">
+                  <strong>Routine Buyers (50%)</strong>
+                  <span>Preferred: Grocery, Dairy</span>
+                </div>
+                <div class="segment-bar"><div class="bar-fill" style="width: 50%;"></div></div>
+              </div>
+              <div class="segment-item interactive-segment" data-type="cohort" data-name="Explorers" data-value="40% size. Basket Size: INR 520. High trial probability with trust badges." style="cursor: pointer;">
+                <div class="segment-info">
+                  <strong>Explorers (40%)</strong>
+                  <span>Preferred: Gourmet, New Launches</span>
+                </div>
+                <div class="segment-bar"><div class="bar-fill" style="width: 40%; background: #9B51E0;"></div></div>
+              </div>
+              <div class="segment-item interactive-segment" data-type="cohort" data-name="Deal Seekers" data-value="33% size. Basket Size: INR 290. Highly responsive to ₹199 trial bundle packs." style="cursor: pointer;">
+                <div class="segment-info">
+                  <strong>Deal Seekers (33%)</strong>
+                  <span>Preferred: Trial Offers, Packs</span>
+                </div>
+                <div class="segment-bar"><div class="bar-fill" style="width: 33%; background: #FF9100;"></div></div>
+              </div>
+              <div class="segment-item interactive-segment" data-type="cohort" data-name="Families" data-value="38% size. Basket Size: INR 850. High diaper and large pack-size demand." style="cursor: pointer;">
+                <div class="segment-info">
+                  <strong>Families (38%)</strong>
+                  <span>Preferred: Baby Care, Household</span>
+                </div>
+                <div class="segment-bar"><div class="bar-fill" style="width: 38%; background: #2D9CDB;"></div></div>
+              </div>
+              <div class="segment-item interactive-segment" data-type="cohort" data-name="Premium Users" data-value="76% size. Basket Size: INR 1200. High organic produce and gourmet items density." style="cursor: pointer;">
+                <div class="segment-info">
+                  <strong>Premium Users (76%)</strong>
+                  <span>Preferred: Organic, Import items</span>
+                </div>
+                <div class="segment-bar"><div class="bar-fill" style="width: 76%; background: #10B981;"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: AI Growth Opportunities Panel -->
+          <div class="grid-card growth-opportunities">
+            <div class="card-header">
+              <h3>🎯 AI Growth Opportunities</h3>
+            </div>
+            <div class="opportunity-list">
+              
+              <div class="opp-item">
+                <div class="opp-transition">Grocery ➔ Personal Care</div>
+                <div class="opp-experiment"><b>Experiment</b>: Personal Care Cross-sell Test (dermatologist wipes at checkout).</div>
+              </div>
+
+              <div class="opp-item">
+                <div class="opp-transition">Snacks ➔ Beverages</div>
+                <div class="opp-experiment"><b>Experiment</b>: Snack Bundle Offer (cold brew with chips combo).</div>
+              </div>
+
+              <div class="opp-item">
+                <div class="opp-transition">Household ➔ Baby Care</div>
+                <div class="opp-experiment"><b>Experiment</b>: Cross-sell hypoallergenic wipes with home cleaners.</div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <!-- BOTTOM SECTION: Emerging Categories & Sentiment Trend -->
+        <section class="bottom-section-grid" style="margin-top: 32px; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px;">
+          <div class="grid-card">
+            <div class="card-header">
+              <h3>📊 Overall Customer Sentiment Trend (90-Day Area)</h3>
+            </div>
+            <div class="area-chart-container" id="trendChartContainer" style="height: 100px; margin-top: 15px; position: relative;">
+              <svg viewBox="0 0 500 100" preserveAspectRatio="none" id="trendSvg" style="width: 100%; height: 100%; overflow: visible;">
+                <defs>
+                  <linearGradient id="areaGrad" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#00F2FE" stop-opacity="0.4"/>
+                    <stop offset="100%" stop-color="#00F2FE" stop-opacity="0"/>
+                  </linearGradient>
+                </defs>
+                <!-- Area Fill -->
+                <path d="M 0 80 Q 80 50 160 70 T 320 30 T 420 20 T 500 10 L 500 100 L 0 100 Z" fill="url(#areaGrad)"/>
+                <!-- Trend Line -->
+                <path d="M 0 80 Q 80 50 160 70 T 320 30 T 420 20 T 500 10" fill="none" stroke="#00F2FE" stroke-width="3" stroke-linecap="round"/>
+                <!-- Dynamic Tracking Line & Dot -->
+                <line id="trackLine" x1="0" y1="0" x2="0" y2="100" stroke="#FF3366" stroke-width="1.5" stroke-dasharray="4" class="hidden" />
+                <circle id="trackDot" cx="0" cy="0" r="5" fill="#FF3366" class="hidden" />
+                <!-- Pulse Dot at current peak -->
+                <circle cx="500" cy="10" r="5" fill="#FF3366" />
+                <circle cx="500" cy="10" r="10" fill="none" stroke="#FF3366" stroke-width="2">
+                  <animate attributeName="r" values="5;15;5" dur="2s" repeatCount="indefinite" />
+                  <animate attributeName="opacity" values="1;0;1" dur="2s" repeatCount="indefinite" />
+                </circle>
+              </svg>
+              <!-- Timeline labels -->
+              <div style="display: flex; justify-content: space-between; font-size: 10px; color: var(--color-text-sub); margin-top: 8px;">
+                <span>90 Days Ago (54% Positive)</span>
+                <span>45 Days Ago</span>
+                <span>Today (72% Positive)</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid-card">
+            <div class="card-header">
+              <h3>✨ Top Emerging Categories</h3>
+            </div>
+            <div class="emerging-list">
+              <div class="emerging-item">
+                <span>💅 Beauty</span>
+                <strong class="positive">↑ +42%</strong>
+              </div>
+              <div class="emerging-item">
+                <span>🏠 Home Decor</span>
+                <strong class="positive">↑ +28%</strong>
+              </div>
+              <div class="emerging-item">
+                <span>🐶 Pet Supplies</span>
+                <strong class="positive">↑ +19%</strong>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Bottom actions -->
+        <div class="bottom-bar-actions" style="margin-top: 32px; display: flex; justify-content: flex-end;">
+          <button class="btn btn-primary" id="monthlySummaryBtn">
+            📄 AI Monthly Summary Report
+          </button>
+        </div>
+      </div>
+
+      <!-- TAB VIEW 2: DATA SOURCES -->
+      <div id="datasourcesView" class="tab-view-content hidden">
+        <div class="grid-card">
+          <div class="card-header">
+            <h3>🔌 Integrated Customer Feedback Pipelines</h3>
+            <span class="badge">13 Active Streams</span>
+          </div>
+          <div style="margin-top: 20px; line-height: 1.8;">
+            <p>The Ingestion Pipeline continuously pulls comments specifically about <b>Zepto App</b> from these channels:</p>
+            <ul style="margin-top: 10px; margin-left: 20px; color: var(--color-text-sub);">
+              <li><b>Google Play Store</b> (package: <code>com.zeptoconsumerapp</code>)</li>
+              <li><b>Apple App Store</b> (ID: <code>1582236968</code>)</li>
+              <li><b>Reddit</b>, <b>YouTube</b>, <b>Quora</b>, <b>LinkedIn</b>, <b>Product Hunt</b></li>
+              <li><b>Zendesk Ticket Logs</b>, <b>MouthShut</b>, <b>Trustpilot</b>, <b>GMB Reviews</b></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB VIEW 3: AI INSIGHTS -->
+      <div id="insightsView" class="tab-view-content hidden">
+        
+        <!-- Summary Cards -->
+        <div class="overview-grid" style="margin-bottom: 24px;">
+          <div class="stat-card" style="border-left: 4px solid var(--color-accent);">
+            <div class="stat-header">
+              <span class="stat-title">Positive Aspect Insights</span>
+              <span class="trend positive">72% Overall</span>
+            </div>
+            <div class="stat-value">92.4K+</div>
+            <div class="stat-sub">Focusing on delivery speed & convenience loops</div>
+          </div>
+          
+          <div class="stat-card" style="border-left: 4px solid #A0AEC0;">
+            <div class="stat-header">
+              <span class="stat-title">Neutral Aspect Insights</span>
+              <span class="trend neutral">15% Overall</span>
+            </div>
+            <div class="stat-value">19.2K+</div>
+            <div class="stat-sub">General product price queries & stock requests</div>
+          </div>
+
+          <div class="stat-card" style="border-left: 4px solid #FF3366;">
+            <div class="stat-header">
+              <span class="stat-title">Negative Aspect Insights</span>
+              <span class="trend negative" style="background: rgba(255, 51, 102, 0.15); color: #FF3366;">13% Overall</span>
+            </div>
+            <div class="stat-value">16.6K+</div>
+            <div class="stat-sub">Freshness quality doubts & large pack barriers</div>
+          </div>
+        </div>
+
+        <div class="dashboard-grid">
+          
+          <!-- Left: Aspect-Based Classification Table -->
+          <div class="grid-card">
+            <div class="card-header">
+              <h3>💡 Aspect-Based NLP Category Mapping</h3>
+              <span class="badge" style="background: rgba(0, 242, 254, 0.15); color: var(--color-accent);">llama-3.3-70b-versatile</span>
+            </div>
+            <p style="font-size: 13px; color: var(--color-text-sub); margin-bottom: 20px;">
+              Unstructured feedback classified by Groq LPU API into target friction codes:
+            </p>
+            
+            <div style="overflow-x: auto;">
+              <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 12.5px; line-height: 1.6;">
+                <thead>
+                  <tr style="border-bottom: 1px solid var(--glass-border); color: #FFF; font-weight: 700;">
+                    <th style="padding: 10px 5px;">Category</th>
+                    <th style="padding: 10px 5px;">Extracted Aspect</th>
+                    <th style="padding: 10px 5px;">Friction Tag</th>
+                    <th style="padding: 10px 5px; text-align: right;">Mentions</th>
+                  </tr>
+                </thead>
+                <tbody style="color: var(--color-text-sub);">
+                  <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+                    <td style="padding: 10px 5px; font-weight: 600; color: #FFF;">Produce</td>
+                    <td style="padding: 10px 5px;">Organic Perishability</td>
+                    <td style="padding: 10px 5px;"><span class="badge" style="background: rgba(255, 61, 0, 0.1); color: #FF3D00; font-size: 9px; padding: 2px 6px;">QUALITY_CONCERN</span></td>
+                    <td style="padding: 10px 5px; text-align: right; font-weight: 700; color: #FFF;">32</td>
+                  </tr>
+                  <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+                    <td style="padding: 10px 5px; font-weight: 600; color: #FFF;">Gourmet</td>
+                    <td style="padding: 10px 5px;">High Initial Price Point</td>
+                    <td style="padding: 10px 5px;"><span class="badge" style="background: rgba(255, 51, 102, 0.1); color: #FF3366; font-size: 9px; padding: 2px 6px;">HIGH_PRICE</span></td>
+                    <td style="padding: 10px 5px; text-align: right; font-weight: 700; color: #FFF;">24</td>
+                  </tr>
+                  <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+                    <td style="padding: 10px 5px; font-weight: 600; color: #FFF;">Household</td>
+                    <td style="padding: 10px 5px;">Hidden Multi-Level UI</td>
+                    <td style="padding: 10px 5px;"><span class="badge" style="background: rgba(0, 242, 254, 0.1); color: #00F2FE; font-size: 9px; padding: 2px 6px;">HIDDEN_IN_UI</span></td>
+                    <td style="padding: 10px 5px; text-align: right; font-weight: 700; color: #FFF;">18</td>
+                  </tr>
+                  <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+                    <td style="padding: 10px 5px; font-weight: 600; color: #FFF;">Baby Care</td>
+                    <td style="padding: 10px 5px;">Large Pack Box Sizes</td>
+                    <td style="padding: 10px 5px;"><span class="badge" style="background: rgba(255, 145, 0, 0.1); color: #FF9100; font-size: 9px; padding: 2px 6px;">PACK_SIZE</span></td>
+                    <td style="padding: 10px 5px; text-align: right; font-weight: 700; color: #FFF;">12</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Right: Groq LLM Ingestion Sample Auditing -->
+          <div class="grid-card">
+            <div class="card-header">
+              <h3>🔍 LLM Ingested Review Audit Logs</h3>
+            </div>
+            <p style="font-size: 13px; color: var(--color-text-sub); margin-bottom: 15px;">
+              Anonymized user feedback examples parsed by the Groq ABSA pipeline:
+            </p>
+            
+            <div style="display: flex; flex-direction: column; gap: 12px;">
+              <div class="opp-item" style="border: 1px solid var(--glass-border); padding: 12px; border-radius: var(--radius-sm); background: rgba(0,0,0,0.2);">
+                <div style="font-style: italic; font-size: 12px; color: #FFF; line-height: 1.5; margin-bottom: 8px;">
+                  "I want to try the gourmet organic strawberries, but they are only sold in huge 1kg boxes. What if they arrive spoiled?"
+                </div>
+                <div style="display: flex; gap: 6px; align-items: center;">
+                  <span class="badge" style="background: rgba(255, 61, 0, 0.1); color: #FF3D00; font-size: 9px; padding: 2px 6px;">QUALITY_CONCERN</span>
+                  <span class="badge" style="background: rgba(255, 145, 0, 0.1); color: #FF9100; font-size: 9px; padding: 2px 6px;">PACK_SIZE_TOO_LARGE</span>
+                </div>
+              </div>
+
+              <div class="opp-item" style="border: 1px solid var(--glass-border); padding: 12px; border-radius: var(--radius-sm); background: rgba(0,0,0,0.2);">
+                <div style="font-style: italic; font-size: 12px; color: #FFF; line-height: 1.5; margin-bottom: 8px;">
+                  "No vet-approved badges on the dog kibbles page. Hard to trust ordering pet food online."
+                </div>
+                <div style="display: flex; gap: 6px; align-items: center;">
+                  <span class="badge" style="background: rgba(255, 61, 0, 0.1); color: #FF3D00; font-size: 9px; padding: 2px 6px;">QUALITY_CONCERN</span>
+                  <span class="badge" style="background: rgba(0, 242, 254, 0.1); color: #00F2FE; font-size: 9px; padding: 2px 6px;">HIDDEN_IN_UI</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- TAB VIEW 4: CUSTOMER BEHAVIOR -->
+      <div id="behaviorView" class="tab-view-content hidden">
+        <div class="grid-card">
+          <div class="card-header">
+            <h3>📈 Customer Behavior & Habits Loops</h3>
+          </div>
+          <p style="margin-top: 15px; color: var(--color-text-sub); line-height: 1.6;">
+            Repeat purchase habits loop dominates 80%+ of transactions. Dynamic Badging reversed and increased new category trial conversion by <b>+67.23%</b>.
+          </p>
+        </div>
+      </div>
+
+      <!-- TAB VIEW 5: USER SEGMENTS -->
+      <div id="segmentsView" class="tab-view-content hidden">
+        <div class="grid-card">
+          <div class="card-header">
+            <h3>👥 Customer Growth Segmentation Summary</h3>
+          </div>
+          <p style="margin-top: 15px; color: var(--color-text-sub); line-height: 1.6;">
+            Segmented user cohorts mapping trial probabilities:
+          </p>
+          <ul style="margin-top: 10px; margin-left: 20px; line-height: 1.8;">
+            <li><b>Routine Buyers (50%)</b>: Checkout in &lt;30s.</li>
+            <li><b>Explorers (40%)</b>: Highly susceptible to safety and quality badges.</li>
+            <li><b>Deal Seekers (33%)</b>: Target with 200g trial packs at ₹199.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- TAB VIEW 6: CATEGORY OPPORTUNITIES -->
+      <div id="opportunitiesView" class="tab-view-content hidden">
+        <div class="dashboard-grid">
+          
+          <!-- Campaign Opportunity 1 -->
+          <div class="grid-card">
+            <div class="card-header">
+              <h3>🎯 Transition: Grocery ➔ Pet Supplies / Gourmet Produce</h3>
+              <span class="badge" style="background: rgba(0, 242, 254, 0.15); color: var(--color-accent);">High Affinity (68%)</span>
+            </div>
+            <p style="font-size: 13px; color: var(--color-text-sub); margin-bottom: 20px;">
+              Targeting habitual weekly grocery shoppers to drive pet food and organic farm purchases:
+            </p>
+            <div class="opportunity-list">
+              <div class="opp-item" style="border-left: 3px solid var(--color-accent); padding-left: 12px; margin-bottom: 15px;">
+                <strong style="color: #FFF; font-size: 13px;">Identified Barrier</strong>
+                <p style="font-size: 12px; color: var(--color-text-sub); margin-top: 4px;">Users buy groceries online but buy pet food offline due to brand and nutritional trust concerns.</p>
+              </div>
+              <div class="opp-item" style="border-left: 3px solid var(--color-accent); padding-left: 12px; margin-bottom: 15px;">
+                <strong style="color: #FFF; font-size: 13px;">Growth Solution</strong>
+                <p style="font-size: 12px; color: var(--color-text-sub); margin-top: 4px;">Surface vet-approved nutritional certificates and farm-to-table freshness badges at checkout.</p>
+              </div>
+              <div class="opp-item" style="border-left: 3px solid var(--color-accent); padding-left: 12px;">
+                <strong style="color: #FFF; font-size: 13px;">Expected Metric Impact</strong>
+                <p style="font-size: 12px; color: var(--color-text-sub); margin-top: 4px;">Projected **+18% conversion lift** and **+INR 140 basket value** increase.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Campaign Opportunity 2 -->
+          <div class="grid-card">
+            <div class="card-header">
+              <h3>🎯 Transition: Snacks & Beverages ➔ Personal Care</h3>
+              <span class="badge" style="background: rgba(0, 242, 254, 0.15); color: var(--color-accent);">Very High Affinity (84%)</span>
+            </div>
+            <p style="font-size: 13px; color: var(--color-text-sub); margin-bottom: 20px;">
+              Targeting impulse snack buyers to cross-sell quick-use cosmetics and skincare:
+            </p>
+            <div class="opportunity-list">
+              <div class="opp-item" style="border-left: 3px solid var(--color-primary); padding-left: 12px; margin-bottom: 15px;">
+                <strong style="color: #FFF; font-size: 13px;">Identified Barrier</strong>
+                <p style="font-size: 12px; color: var(--color-text-sub); margin-top: 4px;">Users view skincare as a high-investment choice and hesitate to buy full-size untried items.</p>
+              </div>
+              <div class="opp-item" style="border-left: 3px solid var(--color-primary); padding-left: 12px; margin-bottom: 15px;">
+                <strong style="color: #FFF; font-size: 13px;">Growth Solution</strong>
+                <p style="font-size: 12px; color: var(--color-text-sub); margin-top: 4px;">Offer mini trial pack sizes (200ml/packs) at ₹199 with checkout order pairing.</p>
+              </div>
+              <div class="opp-item" style="border-left: 3px solid var(--color-primary); padding-left: 12px;">
+                <strong style="color: #FFF; font-size: 13px;">Expected Metric Impact</strong>
+                <p style="font-size: 12px; color: var(--color-text-sub); margin-top: 4px;">Projected **+67.23% relative trial lift** and **+INR 115 AOV boost** (verified in simulator).</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- TAB VIEW 7: GROWTH ACTIONS -->
+      <div id="actionsView" class="tab-view-content hidden">
+        <div class="dashboard-grid">
+          
+          <!-- Left: A/B Test Campaigns -->
+          <div class="grid-card">
+            <div class="card-header">
+              <h3>⚡ Live A/B Discovery Campaigns</h3>
+              <span class="badge">Feast Feature Store Sync</span>
+            </div>
+            <p style="font-size: 13px; color: var(--color-text-sub); margin-bottom: 20px;">
+              Manage and deploy real-time category recommendations to the Zepto checkout page:
+            </p>
+            <div class="opportunity-list">
+              <div class="opp-item" style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+                <div>
+                  <strong>Grocery ➔ Personal Care Cross-sell</strong>
+                  <div style="font-size: 11px; color: var(--color-text-sub); margin-top: 4px;">Target: 5% MAC | Lift: +67.23%</div>
+                </div>
+                <button class="btn btn-primary" id="btnCampaign1" style="padding: 6px 14px; font-size: 11px;" onclick="toggleCampaign(1)">Pause</button>
+              </div>
+
+              <div class="opp-item" style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+                <div>
+                  <strong>Snacks ➔ Beverages Combo Offer</strong>
+                  <div style="font-size: 11px; color: var(--color-text-sub); margin-top: 4px;">Target: 5% MAC | Lift: +45.10%</div>
+                </div>
+                <button class="btn btn-primary" id="btnCampaign2" style="padding: 6px 14px; font-size: 11px;" onclick="toggleCampaign(2)">Pause</button>
+              </div>
+
+              <div class="opp-item" style="display: flex; flex-direction: row; justify-content: space-between; align-items: center; opacity: 0.7;">
+                <div>
+                  <strong>Household ➔ Baby Care Trial Pack</strong>
+                  <div style="font-size: 11px; color: var(--color-text-sub); margin-top: 4px;">Target: -- | Status: Draft</div>
+                </div>
+                <button class="btn btn-export" style="padding: 6px 14px; font-size: 11px;" onclick="toast('Launching Baby Care campaign...')">Deploy</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Downstream API Tester -->
+          <div class="grid-card">
+            <div class="card-header">
+              <h3>🔌 Recommendation REST API Sandbox</h3>
+            </div>
+            <p style="font-size: 13px; color: var(--color-text-sub); margin-bottom: 15px;">
+              Query Port <code>8081</code> recommendation endpoint to retrieve live JSON payload payload:
+            </p>
+            
+            <div style="display: flex; flex-direction: column; gap: 12px; margin-bottom: 15px;">
+              <div style="display: flex; gap: 10px;">
+                <div style="flex: 1;">
+                  <label style="font-size: 11px; color: var(--color-text-sub); display: block; margin-bottom: 4px;">User Segment ID</label>
+                  <select id="apiUserCohort" style="width: 100%; background: rgba(0,0,0,0.3); border: 1px solid var(--glass-border); padding: 8px; border-radius: var(--radius-sm); color: #FFF; outline: none;">
+                    <option value="premium_users">Premium User (Sarah J.)</option>
+                    <option value="routine_buyers">Routine Buyer (John D.)</option>
+                    <option value="explorers">Explorer Cohort</option>
+                  </select>
+                </div>
+                <div style="flex: 1;">
+                  <label style="font-size: 11px; color: var(--color-text-sub); display: block; margin-bottom: 4px;">Current Cart Item</label>
+                  <select id="apiCartItem" style="width: 100%; background: rgba(0,0,0,0.3); border: 1px solid var(--glass-border); padding: 8px; border-radius: var(--radius-sm); color: #FFF; outline: none;">
+                    <option value="organic_spinach">Organic Spinach</option>
+                    <option value="potato_chips">Potato Chips</option>
+                    <option value="dishwash_gel">Dishwash Gel</option>
+                  </select>
+                </div>
+              </div>
+              <button class="btn btn-primary" onclick="testPersonalizationAPI()" style="width: 100%; font-size: 12px; padding: 10px;">
+                ⚡ Send Request to Personalization Server
+              </button>
+            </div>
+
+            <!-- API response JSON window -->
+            <pre id="apiResponseText" style="background: rgba(0,0,0,0.4); border: 1px solid var(--glass-border); padding: 12px; border-radius: var(--radius-sm); font-size: 11px; font-family: monospace; overflow-x: auto; max-height: 120px; color: var(--color-accent);">Click the button to test API response...</pre>
+          </div>
+
+        </div>
+
+        <!-- Section 2: Insight Validation & Quality metrics (Part 1 Requirement) -->
+        <div class="grid-card" style="margin-top: 24px;">
+          <div class="card-header">
+            <h3>📊 AI Insight Validation & Quality Metrics</h3>
+            <span class="badge" style="background: var(--color-accent-light); color: var(--color-accent);">Quality Checked</span>
+          </div>
+          <p style="font-size: 13px; color: var(--color-text-sub); margin-bottom: 20px;">
+            How the Discovery Engine validates the quality, accuracy, and statistical significance of gathered reviews and personalization models:
+          </p>
+          <div class="overview-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px;">
+            <div class="opp-item">
+              <div style="font-size: 11px; color: var(--color-text-sub);">Offline Evaluation Metric</div>
+              <strong style="font-size: 20px; color: var(--color-accent); display: block; margin-top: 4px;">33.3% Precision@3</strong>
+              <span style="font-size: 10.5px; color: var(--color-text-sub);">Validated using offline client evaluator logs</span>
+            </div>
+            
+            <div class="opp-item">
+              <div style="font-size: 11px; color: var(--color-text-sub);">Catalog Diversity Index</div>
+              <strong style="font-size: 20px; color: var(--color-accent); display: block; margin-top: 4px;">0.29 Diversity</strong>
+              <span style="font-size: 10.5px; color: var(--color-text-sub);">Ensures catalog expansion across 18 tracked areas</span>
+            </div>
+
+            <div class="opp-item">
+              <div style="font-size: 11px; color: var(--color-text-sub);">Statistical Rigor</div>
+              <strong style="font-size: 20px; color: var(--color-accent); display: block; margin-top: 4px;">p-value &lt; 0.005</strong>
+              <span style="font-size: 10.5px; color: var(--color-text-sub);">Confirms +67.23% lift is statistically sound</span>
+            </div>
+
+            <div class="opp-item">
+              <div style="font-size: 11px; color: var(--color-text-sub);">Enrichment Pipelines</div>
+              <strong style="font-size: 20px; color: var(--color-accent); display: block; margin-top: 4px;">100% PII Scrubbed</strong>
+              <span style="font-size: 10.5px; color: var(--color-text-sub);">Validated via LLM aspect-based ABSA tag audits</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </main>
+  </div>
+
+  <div id="summaryModal" class="modal hidden">
+    <div class="modal-content glass">
+      <div class="modal-header">
+        <h3>📄 AI Monthly Summary Report</h3>
+        <button class="btn-close" onclick="closeModal()">×</button>
+      </div>
+      <div class="modal-body" style="display: flex; flex-direction: column; gap: 16px; margin-top: 15px;">
+        <p style="font-size: 14px; color: var(--color-text-sub); line-height: 1.5;">
+          The AI Discovery Engine analyzed <span style="color: var(--color-accent); font-weight: 700;">128K+ customer conversations</span> to identify key growth areas and purchase transitions:
+        </p>
+        
+        <!-- Transition Card 1 -->
+        <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid var(--glass-border); padding: 14px 18px; border-radius: var(--radius-md); display: flex; align-items: center; gap: 14px;">
+          <div style="font-size: 22px; background: rgba(0, 242, 254, 0.08); width: 42px; height: 42px; display: flex; align-items: center; justify-content: center; border-radius: 50%; color: var(--color-accent); flex-shrink: 0;">🛍️</div>
+          <div>
+            <h5 style="font-size: 13.5px; font-weight: 700; color: #FFF; margin-bottom: 2px;">Grocery ➔ Personal Care</h5>
+            <p style="font-size: 12.5px; color: var(--color-text-sub); line-height: 1.45;">
+              Cross-sell test resulted in a <span style="color: var(--color-accent); font-weight: 700;">+67.23% relative conversion lift</span>.
+            </p>
+          </div>
+        </div>
+
+        <!-- Transition Card 2 -->
+        <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid var(--glass-border); padding: 14px 18px; border-radius: var(--radius-md); display: flex; align-items: center; gap: 14px;">
+          <div style="font-size: 22px; background: rgba(255, 51, 102, 0.08); width: 42px; height: 42px; display: flex; align-items: center; justify-content: center; border-radius: 50%; color: var(--color-primary); flex-shrink: 0;">☕</div>
+          <div>
+            <h5 style="font-size: 13.5px; font-weight: 700; color: #FFF; margin-bottom: 2px;">Snacks ➔ Beverages</h5>
+            <p style="font-size: 12.5px; color: var(--color-text-sub); line-height: 1.45;">
+              Optimized for bundling. Surfaced custom <span style="color: var(--color-primary); font-weight: 700;">combo recommendations</span> (e.g. cold brew coffee + snack packs).
+            </p>
+          </div>
+        </div>
+
+        <!-- Transition Card 3 -->
+        <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid var(--glass-border); padding: 14px 18px; border-radius: var(--radius-md); display: flex; align-items: center; gap: 14px;">
+          <div style="font-size: 22px; background: rgba(179, 136, 255, 0.08); width: 42px; height: 42px; display: flex; align-items: center; justify-content: center; border-radius: 50%; color: var(--color-purple); flex-shrink: 0;">⚠️</div>
+          <div>
+            <h5 style="font-size: 13.5px; font-weight: 700; color: #FFF; margin-bottom: 2px;">Friction Barriers Identified</h5>
+            <p style="font-size: 12.5px; color: var(--color-text-sub); line-height: 1.45;">
+              Primary obstacles to trials: <span style="color: var(--color-purple); font-weight: 600;">Quality/Freshness concerns (32%)</span> and <span style="color: var(--color-purple); font-weight: 600;">hidden category UI tags (21%)</span>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="hoverTooltip" class="hover-tooltip hidden"></div>
+  <div id="toast" class="toast"></div>
+  <script src="app.js?v=3.1"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+.env
+.venv
+venv/
+ENV/
+
+# IDEs
+.vscode/
+.idea/
+
+# Local data & temporary logs
+data/raw/
+data/enriched/
+data/*.json
+data/*.csv
+data/drift_monitor_report.json
+*.log
