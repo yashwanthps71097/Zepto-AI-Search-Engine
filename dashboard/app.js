@@ -516,7 +516,8 @@ function testPersonalizationAPI() {
   responseBox.textContent = "Sending request to personalization API...";
   responseBox.style.color = "var(--color-text-sub)";
 
-  const apiUrl = `http://localhost:8081/v1/user/discovery-recommendations?user_cohort=${cohort}&cart_item=${cartItem}`;
+  // Connects to the live Railway backend deployment URL
+  const apiUrl = `https://virtuous-possibility-production.up.railway.app/v1/user/discovery-recommendations?user_cohort=${cohort}&cart_item=${cartItem}`;
 
   fetch(apiUrl)
     .then(res => {
