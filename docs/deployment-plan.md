@@ -36,12 +36,17 @@ Vercel is a global CDN platform perfect for serving the static files in the `/da
 3. **Import Project:**
    * Click **Add New** -> **Project**.
    * Import your graduation project repository.
-4. **Configure Settings:**
+4. **Configure Settings (CRITICAL step to avoid build error):**
    * **Framework Preset:** Choose `Other` or `Vanilla HTML/CSS/JS`.
-   * **Root Directory:** Edit this setting and select `dashboard`. (This ensures Vercel only serves your static files in `/dashboard` and hides the backend code from being publicly exposed).
+   * **Root Directory:** Click **Edit** and set it to **`dashboard`**. (If you leave this as the root, Vercel will see your `requirements.txt` and python files and try to compile them as serverless functions, failing with `Error: No Python entrypoint found`).
    * **Build and Development Settings:** Keep default (no build step is needed).
 5. **Deploy:**
    Click **Deploy**. Once finished, Vercel will give you a public URL (e.g., `https://zepto-discovery-dashboard.vercel.app`).
+
+> [!WARNING]
+> **Troubleshooting: "No Python entrypoint found" Error**
+> If you get this error during deployment, it means Vercel is looking at your root directory instead of the `/dashboard` folder. Go to **Settings** -> **General** -> scroll down to **Root Directory**, set it to `dashboard`, and click **Save**. Then trigger a new deployment.
+
 
 ---
 
