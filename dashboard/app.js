@@ -580,6 +580,9 @@ document.addEventListener('DOMContentLoaded', () => {
   // Initialize dynamic date
   updateDateDisplay();
 
+  // Render dynamic feedback sources list
+  renderSources();
+
   const askBtn = document.getElementById('askAiBtn');
   const questionInput = document.getElementById('aiQuestionInput');
 
@@ -727,3 +730,78 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+// Storing and rendering data sources in the requested format (Phase 8 Requirement)
+const feedbackSources = [
+  {
+    "name": "AI-Powered Review Discovery Engine Dashboard",
+    "url": "https://zepto-ai-search-engine-kc7q.vercel.app/"
+  },
+  {
+    "name": "Google Play Store (Zepto Consumer App)",
+    "url": "https://play.google.com/store/apps/details?id=com.zeptoconsumerapp"
+  },
+  {
+    "name": "Apple App Store (Zepto App ID)",
+    "url": "https://apps.apple.com/in/app/zepto-10-minute-grocery/id1575323645"
+  },
+  {
+    "name": "Reddit Discussions (Zepto Search)",
+    "url": "https://www.reddit.com/search/?q=Zepto"
+  },
+  {
+    "name": "X (formerly Twitter) Search",
+    "url": "https://x.com/search"
+  },
+  {
+    "name": "YouTube Reviews",
+    "url": "https://www.youtube.com/results?search_query=Zepto+review"
+  },
+  {
+    "name": "Quora Discussions",
+    "url": "https://www.quora.com/search?q=Zepto"
+  },
+  {
+    "name": "LinkedIn Quick Commerce Articles",
+    "url": "https://www.linkedin.com/search/results/content/?keywords=quick%20commerce"
+  },
+  {
+    "name": "Product Hunt Feedback",
+    "url": "https://www.producthunt.com/search?q=Zepto"
+  },
+  {
+    "name": "Zendesk Support Logs",
+    "url": "https://zepto-ai-search-engine-production.up.railway.app/"
+  },
+  {
+    "name": "MouthShut Consumer Reviews",
+    "url": "https://www.mouthshut.com/product-reviews/Zepto-10-Minute-Grocery-Delivery-reviews-926105342"
+  },
+  {
+    "name": "Trustpilot Reviews",
+    "url": "https://www.trustpilot.com/review/www.zeptonow.com"
+  },
+  {
+    "name": "Google My Business Reviews",
+    "url": "https://business.google.com/"
+  },
+  {
+    "name": "Glassdoor & AmbitionBox Feedback",
+    "url": "https://www.glassdoor.co.in/"
+  }
+];
+
+function renderSources() {
+  const listContainer = document.getElementById("sourcesListContainer");
+  if (!listContainer) return;
+
+  listContainer.innerHTML = feedbackSources
+    .map(source => `
+      <li style="margin-bottom: 12px; list-style-type: none;">
+        <a href="${source.url}" target="_blank" style="color: var(--color-accent); text-decoration: none; font-weight: 500; font-size: 13.5px; transition: var(--transition);" onmouseover="this.style.color='#FF3366'; this.style.textShadow='0 0 8px rgba(255, 51, 102, 0.4)'" onmouseout="this.style.color='var(--color-accent)'; this.style.textShadow='none'">
+          🔗 ${source.name}
+        </a>
+      </li>
+    `)
+    .join("");
+}
