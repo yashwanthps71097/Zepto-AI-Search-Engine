@@ -29,7 +29,8 @@ All 5 phases of the **Zepto AI-powered Discovery Engine** implementation plan ar
 
 ## 🔗 Quick Access Links
 
-- 🌐 **Dashboard UI**: [http://localhost:8080](http://localhost:8080)
+- 🌐 **Local Dashboard UI**: [http://localhost:8080](http://localhost:8080)
+- 🌐 **Production Dashboard (Vercel)**: [https://zepto-ai-search-engine-kc7q.vercel.app/](https://zepto-ai-search-engine-kc7q.vercel.app/)
 - ⚡ **Personalization REST API**: [http://localhost:8081/v1/user/discovery-recommendations?user_id=usr_1001](http://localhost:8081/v1/user/discovery-recommendations?user_id=usr_1001)
 - 📊 **A/B Test Results Document**: [ab_test_results.md](file:///c:/Users/ADMIN/Desktop/Product%20Owner/Graduation%20Project/ab_test_results.md)
 - 🏗️ **System Hand-off Report**: [system_handoff_report.md](file:///c:/Users/ADMIN/Desktop/Product%20Owner/Graduation%20Project/system_handoff_report.md)
