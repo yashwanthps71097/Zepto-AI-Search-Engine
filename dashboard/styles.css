@@ -107,7 +107,7 @@ body::after {
 }
 
 .sidebar-brand h2 {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 800;
   color: #FFFFFF;
 }
@@ -128,7 +128,7 @@ body::after {
   color: var(--color-text-sub);
   padding: 12px 16px;
   border-radius: var(--radius-sm);
-  font-size: 14px;
+  font-size: 16.5px;
   font-weight: 600;
   text-align: left;
   cursor: pointer;
@@ -174,13 +174,13 @@ body::after {
 }
 
 .nav-titles h1 {
-  font-size: 24px;
+  font-size: 29px;
   font-weight: 800;
   color: #FFFFFF;
 }
 
 .subtitle {
-  font-size: 13px;
+  font-size: 15px;
   color: var(--color-text-sub);
   font-weight: 500;
   margin-top: 2px;
@@ -206,7 +206,7 @@ body::after {
   background: transparent;
   border: none;
   outline: none;
-  font-size: 13.5px;
+  font-size: 15px;
   font-weight: 500;
   color: #FFFFFF;
   margin-left: 8px;
@@ -222,7 +222,7 @@ body::after {
   border: 1px solid var(--glass-border);
   padding: 10px 16px;
   border-radius: var(--radius-pill);
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 600;
   color: #FFFFFF;
 }
@@ -230,7 +230,7 @@ body::after {
 .btn {
   padding: 10px 20px;
   border-radius: var(--radius-pill);
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 700;
   cursor: pointer;
   border: none;
@@ -290,13 +290,13 @@ body::after {
 }
 
 .profile-name {
-  font-size: 13px;
+  font-size: 15.5px;
   font-weight: 700;
   color: #FFFFFF;
 }
 
 .profile-role {
-  font-size: 11px;
+  font-size: 13px;
   color: var(--color-text-sub);
 }
 
@@ -333,7 +333,7 @@ body::after {
 }
 
 .stat-title {
-  font-size: 12px;
+  font-size: 14.5px;
   color: var(--color-text-sub);
   font-weight: 600;
   text-transform: uppercase;
@@ -352,14 +352,14 @@ body::after {
 .trend.neutral { background: rgba(255, 255, 255, 0.1); color: #FFF; }
 
 .stat-value {
-  font-size: 28px;
+  font-size: 33px;
   font-weight: 800;
   color: #FFFFFF;
   margin-bottom: 4px;
 }
 
 .stat-sub {
-  font-size: 12px;
+  font-size: 14px;
   color: var(--color-text-sub);
 }
 
@@ -383,7 +383,7 @@ body::after {
 }
 
 .panel-header h3 {
-  font-size: 17px;
+  font-size: 20px;
   font-weight: 800;
   color: #FFFFFF;
 }
@@ -398,7 +398,7 @@ body::after {
 }
 
 .panel-desc {
-  font-size: 13px;
+  font-size: 15px;
   color: var(--color-text-sub);
   margin-bottom: 18px;
 }
@@ -415,7 +415,7 @@ body::after {
   border: 1px solid var(--glass-border);
   padding: 14px 20px;
   border-radius: var(--radius-pill);
-  font-size: 14px;
+  font-size: 16.5px;
   font-weight: 500;
   color: #FFFFFF;
   outline: none;
@@ -524,13 +524,13 @@ body::after {
 }
 
 .card-header h3 {
-  font-size: 16px;
+  font-size: 18.5px;
   font-weight: 800;
   color: #FFFFFF;
 }
 
 .source-count {
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 700;
   color: var(--color-text-sub);
 }
@@ -543,7 +543,7 @@ body::after {
 .sentiment-bar-labels {
   display: flex;
   justify-content: space-between;
-  font-size: 11.5px;
+  font-size: 13.5px;
   font-weight: 700;
   margin-bottom: 6px;
 }
@@ -574,7 +574,7 @@ body::after {
   border: 1px solid var(--glass-border);
   padding: 6px 12px;
   border-radius: var(--radius-pill);
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 600;
   color: var(--color-text-sub);
 }
@@ -596,7 +596,7 @@ body::after {
   padding: 12px 20px;
   border-radius: 8px;
   font-weight: 700;
-  font-size: 13px;
+  font-size: 15.5px;
 }
 
 .funnel-stage.stage-2 { opacity: 0.85; }
@@ -609,7 +609,7 @@ body::after {
 }
 
 .section-title {
-  font-size: 18px;
+  font-size: 21px;
   font-weight: 800;
   color: #FFFFFF;
   margin-bottom: 20px;
@@ -642,7 +642,7 @@ body::after {
 
 .insight-badge {
   align-self: flex-start;
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 700;
   padding: 3px 8px;
   border-radius: var(--radius-pill);
@@ -652,13 +652,13 @@ body::after {
 .insight-badge.badge-vhigh { background: var(--color-primary-light); color: var(--color-primary); }
 
 .insight-card h4 {
-  font-size: 14.5px;
+  font-size: 17px;
   font-weight: 700;
   color: #FFFFFF;
 }
 
 .insight-card p {
-  font-size: 13px;
+  font-size: 15px;
   color: var(--color-text-sub);
   line-height: 1.5;
 }
@@ -666,7 +666,7 @@ body::after {
 .insight-footer {
   display: flex;
   justify-content: space-between;
-  font-size: 11.5px;
+  font-size: 13.5px;
   font-weight: 700;
   color: var(--color-text-sub);
   margin-top: auto;
@@ -688,7 +688,7 @@ body::after {
 .segment-info {
   display: flex;
   justify-content: space-between;
-  font-size: 12.5px;
+  font-size: 14.5px;
 }
 
 .segment-info strong { color: #FFFFFF; }
@@ -725,13 +725,13 @@ body::after {
 }
 
 .opp-transition {
-  font-size: 13.5px;
+  font-size: 15.5px;
   font-weight: 700;
   color: var(--color-accent);
 }
 
 .opp-experiment {
-  font-size: 12.5px;
+  font-size: 14.5px;
   color: #E2E8F0;
   line-height: 1.45;
 }
@@ -749,7 +749,7 @@ body::after {
   background: rgba(0, 0, 0, 0.2);
   padding: 12px 16px;
   border-radius: var(--radius-sm);
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 600;
 }
 
@@ -775,7 +775,7 @@ body::after {
   color: #FFF;
   padding: 12px 24px;
   border-radius: var(--radius-pill);
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 700;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
   opacity: 0;
@@ -828,7 +828,7 @@ body::after {
 }
 
 .modal-header h3 {
-  font-size: 18px;
+  font-size: 21px;
   color: var(--color-accent);
 }
 
