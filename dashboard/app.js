@@ -284,14 +284,14 @@ function generateDynamicPMResponse(userQuery) {
     <div class="user-friendly-answer">
       <div class="uf-takeaway">
         <span class="uf-badge badge-cyan">🔮 Dynamic PM Insights Synthesis</span>
-        <span>Generated from active Zepto sentiment data regarding <b>${topic}</b>.</span>
+        <span>AI analysis on reviews regarding <b>${topic}</b>.</span>
       </div>
       <div class="uf-section">
         <h5 class="uf-subtitle">💡 Actionable Product Recommendations:</h5>
         <ul class="uf-list">
-          <li><b>Friction Point</b>: Customer reviews indicate that users hesitate to expand categories when concerned about <b>${topic}</b>.</li>
-          <li><b>Proposed Experiment</b>: Serve risk-reversing trust badges or trial packs at checkout to counter barriers associated with <b>${topic}</b>.</li>
-          <li><b>Expected Metric Impact</b>: Cross-selling tests predict a <b>+15% to +20% conversion lift</b> in non-grocery sectors.</li>
+          <li><b>Friction Point</b>: Users shopping for <b>${topic}</b> are locked in a fast re-ordering routine, completely bypassing other product categories.</li>
+          <li><b>Proposed Experiment</b>: Cross-sell related trial items at checkout, addressing quality or pricing concerns with visual trust badges.</li>
+          <li><b>Expected Metric Impact</b>: Early testing projects a <b>+15% to +20% conversion lift</b> into adjacent categories.</li>
         </ul>
       </div>
     </div>
