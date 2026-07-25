@@ -90,7 +90,7 @@ Synthesizes structured outputs to empower PM business decisions:
   3. **Deal Seekers**: Highly responsive to trial discounts and bundle offers.
   4. **Families**: Driven by bulk/family pack size and safety verification.
   5. **Premium Users**: Driven by organic, gourmet, and high-quality premium catalog tiers.
-* **Zepto AI Discovery Dashboard (`dashboard/index.html`)**: High-fidelity desktop dashboard UI featuring a glowing dark glassmorphism workspace theme (deep purple/blue backgrounds, cyan/mint accents, electric pink highlights) providing real-time Feedback Intelligence, customer journey charts, dynamic AI insight cards, segment breakdowns (with hover tooltips), and Growth Action interactive tools.
+* **AI-Powered Review Discovery Engine Dashboard (`dashboard/index.html`)**: High-fidelity desktop dashboard UI featuring a glowing dark glassmorphism workspace theme (deep purple/blue backgrounds, cyan/mint accents, electric pink highlights) providing real-time Feedback Intelligence, customer journey charts, dynamic AI insight cards, segment breakdowns (with hover tooltips), and Growth Action interactive tools.
 
 ### 2.4. Downstream Personalization Layer (`src/personalization/`)
 Serves personalizations to the Zepto mobile/web clients:

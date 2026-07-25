@@ -67,7 +67,7 @@ The engine processes this data to answer:
 The Zepto AI Discovery Engine features a premium desktop dashboard designed specifically for Zepto's Growth Product Team to analyze feedback, shopping behavior, and category transitions:
 
 * **Top Navigation Bar**:
-  * **Header Title**: `"Zepto AI Discovery Engine"`
+  * **Header Title**: `"AI-Powered Review Discovery Engine Dashboard"`
   * **Subtitle**: `"AI-powered Customer Insights & Category Growth Intelligence"`
   * **Controls**: Date range selector (dynamically updated to current client date), Notification icon, User profile, Export report button (active print window trigger).
 * **Left Sidebar Navigation**:

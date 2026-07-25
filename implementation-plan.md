@@ -67,7 +67,7 @@ This document outlines the complete implementation roadmap and phase-wise delive
 
 * **Tasks:**
   * Build cohort analyzer microservice (`src/analytics/cohort_analyzer.py`) profiling 5 segments (`Routine Buyers`, `Explorers`, `Deal Seekers`, `Families`, `Premium Users`).
-  * Build premium glowing dark glassmorphism **Zepto AI Discovery Dashboard (`dashboard/index.html`, `styles.css`, `app.js`)** featuring:
+  * Build premium glowing dark glassmorphism **AI-Powered Review Discovery Engine Dashboard (`dashboard/index.html`, `styles.css`, `app.js`)** featuring:
     * Left sidebar navigation (Dashboard, Data Sources, AI Insights, Customer Behavior, User Segments, Category Opportunities, Growth Actions).
     * Overview cards tracking 128K+ conversations, 92% confidence score, 24 emerging needs, and 18 categories.
     * Interactive feedback intelligence panels, visual line/bar/heatmap charts, dynamic AI insight cards, a 90-day sentiment area wave tracker, and hover tooltips on all segments.
