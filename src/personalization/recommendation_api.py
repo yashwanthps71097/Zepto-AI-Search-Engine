@@ -73,7 +73,21 @@ class PersonalizationAPIHandler(BaseHTTPRequestHandler):
     def do_GET(self):
         parsed_url = urlparse(self.path)
         
-        if parsed_url.path == "/v1/user/discovery-recommendations":
+        if parsed_url.path == "/" or parsed_url.path == "":
+            status_data = {
+                "status": "online",
+                "message": "Zepto AI Discovery Engine REST API is running successfully.",
+                "endpoints": {
+                    "discovery_recommendations": "/v1/user/discovery-recommendations?user_id=usr_1001"
+                }
+            }
+            self.send_response(200)
+            self.send_header("Content-Type", "application/json")
+            self.send_header("Access-Control-Allow-Origin", "*")
+            self.end_headers()
+            self.wfile.write(json.dumps(status_data, indent=2).encode("utf-8"))
+            
+        elif parsed_url.path == "/v1/user/discovery-recommendations":
             query_params = parse_qs(parsed_url.query)
             user_id = query_params.get("user_id", ["usr_1001"])[0]
             
@@ -86,6 +100,8 @@ class PersonalizationAPIHandler(BaseHTTPRequestHandler):
             self.wfile.write(json.dumps(res_data, indent=2).encode("utf-8"))
         else:
             self.send_response(404)
+            self.send_header("Content-Type", "application/json")
+            self.send_header("Access-Control-Allow-Origin", "*")
             self.end_headers()
             self.wfile.write(b'{"error": "Endpoint not found"}')
 
