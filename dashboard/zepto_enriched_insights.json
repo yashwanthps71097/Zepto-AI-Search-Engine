@@ -1,0 +1,1139 @@
+[
+  {
+    "id": "glassdoor_1",
+    "source": "Glassdoor",
+    "content": "Operations are fast, but catalog layout makes new category cross-selling hard to scale due to rigid tag management.",
+    "sentiment": "neutral",
+    "barrier": "HIDDEN_IN_UI",
+    "cleaned_content": "Operations are fast, but catalog layout makes new category cross-selling hard to scale due to rigid tag management.",
+    "ai_enrichment": {
+      "sentiment": "NEUTRAL",
+      "target_category": null,
+      "aspects": [
+        "search_discovery"
+      ],
+      "purchase_barrier": "HIDDEN_IN_UI",
+      "unmet_need": null,
+      "summary": "Customer finds operations fast but has difficulty with catalog layout and category cross-selling due to rigid tag management."
+    }
+  },
+  {
+    "id": "gmb_1",
+    "source": "GMB",
+    "content": "Dark store local stock for premium baby wipes is always low. I had to buy from another platform.",
+    "sentiment": "negative",
+    "barrier": "LIMITED_VARIETY",
+    "cleaned_content": "Dark store local stock for premium baby wipes is always low. I had to buy from another platform.",
+    "ai_enrichment": {
+      "sentiment": "NEGATIVE",
+      "target_category": "Household",
+      "aspects": [
+        "item_availability"
+      ],
+      "purchase_barrier": "LIMITED_STOCK",
+      "unmet_need": "premium baby wipes",
+      "summary": "Customer faced low stock issue for premium baby wipes on Zepto App and had to buy from another platform."
+    }
+  },
+  {
+    "source": "google_play",
+    "app_name": "Zepto",
+    "review_id": "9335bd29-706a-45a3-a76c-7dee4cfb0416",
+    "user_name": "Harish .m",
+    "content": "nice service and price",
+    "rating": 5,
+    "thumbs_up": 0,
+    "created_at": "2026-07-20T09:41:41",
+    "reply_content": null,
+    "replied_at": null,
+    "cleaned_content": "nice service and price",
+    "ai_enrichment": {
+      "sentiment": "POSITIVE",
+      "target_category": null,
+      "aspects": [
+        "price",
+        "service"
+      ],
+      "purchase_barrier": null,
+      "unmet_need": null,
+      "summary": "Customer appreciated the service and price of Zepto"
+    }
+  },
+  {
+    "source": "google_play",
+    "app_name": "Zepto",
+    "review_id": "c2722045-7dcc-43c0-a6bf-c5e8d0a13717",
+    "user_name": "Pooja Sharma",
+    "content": "thank you🥰",
+    "rating": 5,
+    "thumbs_up": 0,
+    "created_at": "2026-07-20T09:34:09",
+    "reply_content": null,
+    "replied_at": null,
+    "cleaned_content": "thank you🥰",
+    "ai_enrichment": {
+      "sentiment": "POSITIVE",
+      "target_category": null,
+      "aspects": [],
+      "purchase_barrier": null,
+      "unmet_need": null,
+      "summary": "Customer expressed gratitude towards Zepto"
+    }
+  },
+  {
+    "source": "google_play",
+    "app_name": "Zepto",
+    "review_id": "cb42da13-315c-4e64-81de-3828ab53e9ce",
+    "user_name": "Sam Sar",
+    "content": "i received wrong and missing products and the customer executive says, we verify everything at our end and the issue is closed without resolving",
+    "rating": 1,
+    "thumbs_up": 0,
+    "created_at": "2026-07-20T09:31:57",
+    "reply_content": "Hey!\n\nLooks like you've had an unpleasant experience. Could you please share the details of your concern at support@zepto.com? Our team will look into this right away.\n\nThank You,\nTeam Zepto",
+    "replied_at": "2026-07-20T09:47:11",
+    "cleaned_content": "i received wrong and missing products and the customer executive says, we verify everything at our end and the issue is closed without resolving",
+    "ai_enrichment": {
+      "sentiment": "NEGATIVE",
+      "target_category": null,
+      "aspects": [
+        "item_quality",
+        "delivery_speed"
+      ],
+      "purchase_barrier": "QUALITY_CONCERN",
+      "unmet_need": null,
+      "summary": "Customer received wrong and missing products with no resolution from customer support"
+    }
+  },
+  {
+    "source": "google_play",
+    "app_name": "Zepto",
+    "review_id": "9335bd29-706a-45a3-a76c-7dee4cfb0416",
+    "user_name": "Harish .m",
+    "content": "nice service and price",
+    "rating": 5,
+    "thumbs_up": 0,
+    "created_at": "2026-07-20T09:41:41",
+    "reply_content": null,
+    "replied_at": null,
+    "cleaned_content": "nice service and price",
+    "ai_enrichment": {
+      "sentiment": "POSITIVE",
+      "target_category": null,
+      "aspects": [
+        "price",
+        "service"
+      ],
+      "purchase_barrier": null,
+      "unmet_need": null,
+      "summary": "Customer appreciated the service and price of Zepto"
+    }
+  },
+  {
+    "source": "google_play",
+    "app_name": "Zepto",
+    "review_id": "c2722045-7dcc-43c0-a6bf-c5e8d0a13717",
+    "user_name": "Pooja Sharma",
+    "content": "thank you🥰",
+    "rating": 5,
+    "thumbs_up": 0,
+    "created_at": "2026-07-20T09:34:09",
+    "reply_content": null,
+    "replied_at": null,
+    "cleaned_content": "thank you🥰",
+    "ai_enrichment": {
+      "sentiment": "POSITIVE",
+      "target_category": null,
+      "aspects": [],
+      "purchase_barrier": null,
+      "unmet_need": null,
+      "summary": "Customer expressed gratitude towards Zepto"
+    }
+  },
+  {
+    "source": "google_play",
+    "app_name": "Zepto",
+    "review_id": "cb42da13-315c-4e64-81de-3828ab53e9ce",
+    "user_name": "Sam Sar",
+    "content": "i received wrong and missing products and the customer executive says, we verify everything at our end and the issue is closed without resolving",
+    "rating": 1,
+    "thumbs_up": 0,
+    "created_at": "2026-07-20T09:31:57",
+    "reply_content": "Hey!\n\nLooks like you've had an unpleasant experience. Could you please share the details of your concern at support@zepto.com? Our team will look into this right away.\n\nThank You,\nTeam Zepto",
+    "replied_at": "2026-07-20T09:47:11",
+    "cleaned_content": "i received wrong and missing products and the customer executive says, we verify everything at our end and the issue is closed without resolving",
+    "ai_enrichment": {
+      "sentiment": "NEGATIVE",
+      "target_category": null,
+      "aspects": [
+        "item_quality",
+        "customer_support"
+      ],
+      "purchase_barrier": "QUALITY_CONCERN",
+      "unmet_need": null,
+      "summary": "Customer received wrong and missing products and had an unsatisfactory experience with customer support."
+    }
+  },
+  {
+    "source": "google_play",
+    "app_name": "Zepto",
+    "review_id": "9335bd29-706a-45a3-a76c-7dee4cfb0416",
+    "user_name": "Harish .m",
+    "content": "nice service and price",
+    "rating": 5,
+    "thumbs_up": 0,
+    "created_at": "2026-07-20T09:41:41",
+    "reply_content": null,
+    "replied_at": null,
+    "cleaned_content": "nice service and price",
+    "ai_enrichment": {
+      "sentiment": "POSITIVE",
+      "target_category": null,
+      "aspects": [
+        "price",
+        "service"
+      ],
+      "purchase_barrier": null,
+      "unmet_need": null,
+      "summary": "Customer appreciated the service and price of Zepto"
+    }
+  },
+  {
+    "source": "google_play",
+    "app_name": "Zepto",
+    "review_id": "c2722045-7dcc-43c0-a6bf-c5e8d0a13717",
+    "user_name": "Pooja Sharma",
+    "content": "thank you🥰",
+    "rating": 5,
+    "thumbs_up": 0,
+    "created_at": "2026-07-20T09:34:09",
+    "reply_content": null,
+    "replied_at": null,
+    "cleaned_content": "thank you🥰",
+    "ai_enrichment": {
+      "sentiment": "POSITIVE",
+      "target_category": null,
+      "aspects": [],
+      "purchase_barrier": null,
+      "unmet_need": null,
+      "summary": "Customer expressed gratitude towards Zepto"
+    }
+  },
+  {
+    "source": "google_play",
+    "app_name": "Zepto",
+    "review_id": "cb42da13-315c-4e64-81de-3828ab53e9ce",
+    "user_name": "Sam Sar",
+    "content": "i received wrong and missing products and the customer executive says, we verify everything at our end and the issue is closed without resolving",
+    "rating": 1,
+    "thumbs_up": 0,
+    "created_at": "2026-07-20T09:31:57",
+    "reply_content": "Hey!\n\nLooks like you've had an unpleasant experience. Could you please share the details of your concern at support@zepto.com? Our team will look into this right away.\n\nThank You,\nTeam Zepto",
+    "replied_at": "2026-07-20T09:47:11",
+    "cleaned_content": "i received wrong and missing products and the customer executive says, we verify everything at our end and the issue is closed without resolving",
+    "ai_enrichment": {
+      "sentiment": "NEGATIVE",
+      "target_category": null,
+      "aspects": [
+        "item_quality",
+        "customer_support"
+      ],
+      "purchase_barrier": "QUALITY_CONCERN",
+      "unmet_need": null,
+      "summary": "Customer received wrong and missing products and had an unsatisfactory experience with customer support"
+    }
+  },
+  {
+    "source": "google_play",
+    "app_name": "Zepto",
+    "review_id": "9335bd29-706a-45a3-a76c-7dee4cfb0416",
+    "user_name": "Harish .m",
+    "content": "nice service and price",
+    "rating": 5,
+    "thumbs_up": 0,
+    "created_at": "2026-07-20T09:41:41",
+    "reply_content": null,
+    "replied_at": null,
+    "cleaned_content": "nice service and price",
+    "ai_enrichment": {
+      "sentiment": "POSITIVE",
+      "target_category": null,
+      "aspects": [
+        "price",
+        "service"
+      ],
+      "purchase_barrier": null,
+      "unmet_need": null,
+      "summary": "Customer appreciated the service and price of Zepto"
+    }
+  },
+  {
+    "source": "google_play",
+    "app_name": "Zepto",
+    "review_id": "c2722045-7dcc-43c0-a6bf-c5e8d0a13717",
+    "user_name": "Pooja Sharma",
+    "content": "thank you🥰",
+    "rating": 5,
+    "thumbs_up": 0,
+    "created_at": "2026-07-20T09:34:09",
+    "reply_content": null,
+    "replied_at": null,
+    "cleaned_content": "thank you🥰",
+    "ai_enrichment": {
+      "sentiment": "POSITIVE",
+      "target_category": null,
+      "aspects": [],
+      "purchase_barrier": null,
+      "unmet_need": null,
+      "summary": "Customer expressed gratitude towards Zepto"
+    }
+  },
+  {
+    "source": "google_play",
+    "app_name": "Zepto",
+    "review_id": "cb42da13-315c-4e64-81de-3828ab53e9ce",
+    "user_name": "Sam Sar",
+    "content": "i received wrong and missing products and the customer executive says, we verify everything at our end and the issue is closed without resolving",
+    "rating": 1,
+    "thumbs_up": 0,
+    "created_at": "2026-07-20T09:31:57",
+    "reply_content": "Hey!\n\nLooks like you've had an unpleasant experience. Could you please share the details of your concern at support@zepto.com? Our team will look into this right away.\n\nThank You,\nTeam Zepto",
+    "replied_at": "2026-07-20T09:47:11",
+    "cleaned_content": "i received wrong and missing products and the customer executive says, we verify everything at our end and the issue is closed without resolving",
+    "ai_enrichment": {
+      "sentiment": "NEGATIVE",
+      "target_category": null,
+      "aspects": [
+        "item_quality",
+        "delivery_speed",
+        "customer_support"
+      ],
+      "purchase_barrier": "QUALITY_CONCERN",
+      "unmet_need": null,
+      "summary": "Customer received wrong and missing products and had an unsatisfactory experience with customer support."
+    }
+  },
+  {
+    "source": "google_play",
+    "app_name": "Zepto",
+    "review_id": "982f1293-0bc2-4ed8-bc3c-924aaf0f2641",
+    "user_name": "raziq mulla",
+    "content": "very good",
+    "rating": 5,
+    "thumbs_up": 0,
+    "created_at": "2026-07-21T08:47:23",
+    "reply_content": null,
+    "replied_at": null,
+    "cleaned_content": "very good",
+    "ai_enrichment": {
+      "sentiment": "POSITIVE",
+      "target_category": null,
+      "aspects": [],
+      "purchase_barrier": null,
+      "unmet_need": null,
+      "summary": "Customer had a very good experience with the Zepto App"
+    }
+  },
+  {
+    "source": "google_play",
+    "app_name": "Zepto",
+    "review_id": "92286901-7653-4ad2-b8d6-672289bba044",
+    "user_name": "Srinivas Gundu",
+    "content": "super 👍",
+    "rating": 5,
+    "thumbs_up": 0,
+    "created_at": "2026-07-21T08:46:14",
+    "reply_content": null,
+    "replied_at": null,
+    "cleaned_content": "super 👍",
+    "ai_enrichment": {
+      "sentiment": "POSITIVE",
+      "target_category": null,
+      "aspects": [],
+      "purchase_barrier": null,
+      "unmet_need": null,
+      "summary": "Customer expressed satisfaction with the Zepto App"
+    }
+  },
+  {
+    "source": "google_play",
+    "app_name": "Zepto",
+    "review_id": "91f52977-45b4-4d6a-8f01-c0a0597b63d2",
+    "user_name": "Alok jain",
+    "content": "don't purchase milk from the app",
+    "rating": 1,
+    "thumbs_up": 0,
+    "created_at": "2026-07-21T08:45:46",
+    "reply_content": "Hey!\n\nLooks like you've had an unpleasant experience. Could you please share the details of your concern at support@zepto.com? Our team will look into this right away.\n\nThank You,\nTeam Zepto",
+    "replied_at": "2026-07-21T08:46:15",
+    "cleaned_content": "don't purchase milk from the app",
+    "ai_enrichment": {
+      "sentiment": "NEGATIVE",
+      "target_category": "Dairy",
+      "aspects": [
+        "item_quality"
+      ],
+      "purchase_barrier": "QUALITY_CONCERN",
+      "unmet_need": null,
+      "summary": "Customer advises against purchasing milk from the app due to quality concerns."
+    }
+  },
+  {
+    "source": "google_play",
+    "app_name": "Zepto",
+    "review_id": "982f1293-0bc2-4ed8-bc3c-924aaf0f2641",
+    "user_name": "raziq mulla",
+    "content": "very good",
+    "rating": 5,
+    "thumbs_up": 0,
+    "created_at": "2026-07-21T08:47:23",
+    "reply_content": null,
+    "replied_at": null,
+    "cleaned_content": "very good",
+    "ai_enrichment": {
+      "sentiment": "POSITIVE",
+      "target_category": null,
+      "aspects": [],
+      "purchase_barrier": null,
+      "unmet_need": null,
+      "summary": "Customer had a very good experience with the Zepto App"
+    }
+  },
+  {
+    "source": "google_play",
+    "app_name": "Zepto",
+    "review_id": "92286901-7653-4ad2-b8d6-672289bba044",
+    "user_name": "Srinivas Gundu",
+    "content": "super 👍",
+    "rating": 5,
+    "thumbs_up": 0,
+    "created_at": "2026-07-21T08:46:14",
+    "reply_content": null,
+    "replied_at": null,
+    "cleaned_content": "super 👍",
+    "ai_enrichment": {
+      "sentiment": "POSITIVE",
+      "target_category": null,
+      "aspects": [],
+      "purchase_barrier": null,
+      "unmet_need": null,
+      "summary": "Customer expressed satisfaction with the Zepto App"
+    }
+  },
+  {
+    "source": "google_play",
+    "app_name": "Zepto",
+    "review_id": "91f52977-45b4-4d6a-8f01-c0a0597b63d2",
+    "user_name": "Alok jain",
+    "content": "don't purchase milk from the app",
+    "rating": 1,
+    "thumbs_up": 0,
+    "created_at": "2026-07-21T08:45:46",
+    "reply_content": "Hey!\n\nLooks like you've had an unpleasant experience. Could you please share the details of your concern at support@zepto.com? Our team will look into this right away.\n\nThank You,\nTeam Zepto",
+    "replied_at": "2026-07-21T08:46:15",
+    "cleaned_content": "don't purchase milk from the app",
+    "ai_enrichment": {
+      "sentiment": "NEGATIVE",
+      "target_category": "Dairy",
+      "aspects": [
+        "item_quality"
+      ],
+      "purchase_barrier": "QUALITY_CONCERN",
+      "unmet_need": null,
+      "summary": "Customer advises against purchasing milk from the app due to quality concerns"
+    }
+  },
+  {
+    "id": "linkedin_1",
+    "source": "LinkedIn",
+    "content": "Zepto's rapid delivery speed creates a strict habit loop. Users complete orders for daily bread & milk in 30 seconds, completely bypassing new categories.",
+    "sentiment": "neutral",
+    "barrier": "HABIT_LOOP",
+    "cleaned_content": "Zepto's rapid delivery speed creates a strict habit loop. Users complete orders for daily bread & milk in 30 seconds, completely bypassing new categories.",
+    "ai_enrichment": {
+      "sentiment": "NEUTRAL",
+      "target_category": null,
+      "aspects": [
+        "delivery_speed",
+        "search_discovery"
+      ],
+      "purchase_barrier": "HIDDEN_IN_UI",
+      "unmet_need": null,
+      "summary": "Zepto's rapid delivery speed leads to a habit loop where users quickly complete orders for daily essentials without exploring new categories."
+    }
+  },
+  {
+    "id": "mouthshut_1",
+    "source": "MouthShut",
+    "content": "Zepto delivers in 10 mins but fruits are sometimes stale. Need a quality guarantee badge before trying organic fruits.",
+    "sentiment": "negative",
+    "barrier": "QUALITY_CONCERN",
+    "cleaned_content": "Zepto delivers in 10 mins but fruits are sometimes stale. Need a quality guarantee badge before trying organic fruits.",
+    "ai_enrichment": {
+      "sentiment": "NEUTRAL",
+      "target_category": "Produce",
+      "aspects": [
+        "delivery_speed",
+        "item_quality"
+      ],
+      "purchase_barrier": "QUALITY_CONCERN",
+      "unmet_need": "quality guarantee badge for organic fruits",
+      "summary": "Customer appreciates Zepto's fast delivery but is concerned about the quality of fruits and suggests a quality guarantee badge for organic products."
+    }
+  },
+  {
+    "id": "ph_1",
+    "source": "Product Hunt",
+    "content": "Love the UI layout but would love a quick 'Add Trial Pack' button directly on checkout for organic veggies and premium snacks.",
+    "sentiment": "positive",
+    "barrier": "HIDDEN_IN_UI",
+    "cleaned_content": "Love the UI layout but would love a quick 'Add Trial Pack' button directly on checkout for organic veggies and premium snacks.",
+    "ai_enrichment": {
+      "sentiment": "NEUTRAL",
+      "target_category": "Produce",
+      "aspects": [
+        "search_discovery",
+        "pack_size"
+      ],
+      "purchase_barrier": "HIDDEN_IN_UI",
+      "unmet_need": "Trial pack for organic veggies and premium snacks",
+      "summary": "Customer suggests adding a quick 'Add Trial Pack' button on checkout for organic veggies and premium snacks"
+    }
+  },
+  {
+    "id": "quora_1",
+    "source": "Quora",
+    "content": "Why is the organic produce section so hard to find in the Zepto UI? I had to search multiple times to find organic apples. It's hidden in sub-menus.",
+    "sentiment": "negative",
+    "barrier": "HIDDEN_IN_UI",
+    "cleaned_content": "Why is the organic produce section so hard to find in the Zepto UI? I had to search multiple times to find organic apples. It's hidden in sub-menus.",
+    "ai_enrichment": {
+      "sentiment": "NEGATIVE",
+      "target_category": "Produce",
+      "aspects": [
+        "search_discovery"
+      ],
+      "purchase_barrier": "HIDDEN_IN_UI",
+      "unmet_need": null,
+      "summary": "Customer had difficulty finding the organic produce section in the Zepto app due to poor UI navigation."
+    }
+  },
+  {
+    "source": "reddit",
+    "app_name": "Zepto",
+    "post_id": "rd_101",
+    "subreddit": "r/india",
+    "title": "Why is Zepto's fresh produce category so hidden in the app?",
+    "content": "I usually order chips and cold drinks from Zepto. Yesterday I tried looking for organic vegetables, but the app keeps recommending me snacks instead. Anyone else feel the discovery for non-snack categories is poor?",
+    "score": 142,
+    "num_comments": 38,
+    "permalink": "https://reddit.com/r/india/comments/zepto_produce_discovery",
+    "created_utc": 1721500000,
+    "cleaned_content": "I usually order chips and cold drinks from Zepto. Yesterday I tried looking for organic vegetables, but the app keeps recommending me snacks instead. Anyone else feel the discovery for non-snack categories is poor?",
+    "ai_enrichment": {
+      "sentiment": "NEGATIVE",
+      "target_category": "Produce",
+      "aspects": [
+        "search_discovery"
+      ],
+      "purchase_barrier": "HIDDEN_IN_UI",
+      "unmet_need": "organic vegetables",
+      "summary": "Customer had difficulty finding organic vegetables due to poor search discovery on the Zepto app."
+    }
+  },
+  {
+    "source": "reddit",
+    "app_name": "Zepto",
+    "ticket_id": "rd_102",
+    "subreddit": "r/Bangalore",
+    "title": "Zepto daily essentials vs local supermarket price comparison",
+    "content": "Zepto delivery speed is great for emergency snacks, but for monthly household cleaning items, I rarely buy from them because they don't show bundled discounts on the homepage.",
+    "score": 89,
+    "num_comments": 22,
+    "permalink": "https://reddit.com/r/Bangalore/comments/zepto_household_discounts",
+    "created_utc": 1721510000,
+    "cleaned_content": "Zepto delivery speed is great for emergency snacks, but for monthly household cleaning items, I rarely buy from them because they don't show bundled discounts on the homepage.",
+    "ai_enrichment": {
+      "sentiment": "NEUTRAL",
+      "target_category": "Household",
+      "aspects": [
+        "delivery_speed",
+        "search_discovery"
+      ],
+      "purchase_barrier": "HIDDEN_IN_UI",
+      "unmet_need": null,
+      "summary": "Customer appreciates Zepto's delivery speed but is deterred from buying household items due to lack of visible bundled discounts on the homepage."
+    }
+  },
+  {
+    "source": "reddit",
+    "app_name": "Zepto",
+    "post_id": "rd_101",
+    "subreddit": "r/india",
+    "title": "Why is Zepto's fresh produce category so hidden in the app?",
+    "content": "I usually order chips and cold drinks from Zepto. Yesterday I tried looking for organic vegetables, but the app keeps recommending me snacks instead. Anyone else feel the discovery for non-snack categories is poor?",
+    "score": 142,
+    "num_comments": 38,
+    "permalink": "https://reddit.com/r/india/comments/zepto_produce_discovery",
+    "created_utc": 1721500000,
+    "cleaned_content": "I usually order chips and cold drinks from Zepto. Yesterday I tried looking for organic vegetables, but the app keeps recommending me snacks instead. Anyone else feel the discovery for non-snack categories is poor?",
+    "ai_enrichment": {
+      "sentiment": "NEGATIVE",
+      "target_category": "Produce",
+      "aspects": [
+        "search_discovery"
+      ],
+      "purchase_barrier": "HIDDEN_IN_UI",
+      "unmet_need": "organic vegetables",
+      "summary": "Customer had difficulty finding organic vegetables due to poor search discovery on the Zepto app."
+    }
+  },
+  {
+    "source": "reddit",
+    "app_name": "Zepto",
+    "ticket_id": "rd_102",
+    "subreddit": "r/Bangalore",
+    "title": "Zepto daily essentials vs local supermarket price comparison",
+    "content": "Zepto delivery speed is great for emergency snacks, but for monthly household cleaning items, I rarely buy from them because they don't show bundled discounts on the homepage.",
+    "score": 89,
+    "num_comments": 22,
+    "permalink": "https://reddit.com/r/Bangalore/comments/zepto_household_discounts",
+    "created_utc": 1721510000,
+    "cleaned_content": "Zepto delivery speed is great for emergency snacks, but for monthly household cleaning items, I rarely buy from them because they don't show bundled discounts on the homepage.",
+    "ai_enrichment": {
+      "sentiment": "NEUTRAL",
+      "target_category": "Household",
+      "aspects": [
+        "delivery_speed",
+        "search_discovery"
+      ],
+      "purchase_barrier": "HIDDEN_IN_UI",
+      "unmet_need": null,
+      "summary": "Customer appreciates Zepto's delivery speed but is deterred from buying household items due to lack of visible bundled discounts."
+    }
+  },
+  {
+    "source": "reddit",
+    "app_name": "Zepto",
+    "post_id": "rd_101",
+    "subreddit": "r/india",
+    "title": "Why is Zepto's fresh produce category so hidden in the app?",
+    "content": "I usually order chips and cold drinks from Zepto. Yesterday I tried looking for organic vegetables, but the app keeps recommending me snacks instead. Anyone else feel the discovery for non-snack categories is poor?",
+    "score": 142,
+    "num_comments": 38,
+    "permalink": "https://reddit.com/r/india/comments/zepto_produce_discovery",
+    "created_utc": 1721500000,
+    "cleaned_content": "I usually order chips and cold drinks from Zepto. Yesterday I tried looking for organic vegetables, but the app keeps recommending me snacks instead. Anyone else feel the discovery for non-snack categories is poor?",
+    "ai_enrichment": {
+      "sentiment": "NEGATIVE",
+      "target_category": "Produce",
+      "aspects": [
+        "search_discovery"
+      ],
+      "purchase_barrier": "HIDDEN_IN_UI",
+      "unmet_need": "organic vegetables",
+      "summary": "Customer had difficulty finding organic vegetables due to poor search discovery on the Zepto app."
+    }
+  },
+  {
+    "source": "reddit",
+    "app_name": "Zepto",
+    "ticket_id": "rd_102",
+    "subreddit": "r/Bangalore",
+    "title": "Zepto daily essentials vs local supermarket price comparison",
+    "content": "Zepto delivery speed is great for emergency snacks, but for monthly household cleaning items, I rarely buy from them because they don't show bundled discounts on the homepage.",
+    "score": 89,
+    "num_comments": 22,
+    "permalink": "https://reddit.com/r/Bangalore/comments/zepto_household_discounts",
+    "created_utc": 1721510000,
+    "cleaned_content": "Zepto delivery speed is great for emergency snacks, but for monthly household cleaning items, I rarely buy from them because they don't show bundled discounts on the homepage.",
+    "ai_enrichment": {
+      "sentiment": "NEUTRAL",
+      "target_category": "Household",
+      "aspects": [
+        "delivery_speed",
+        "search_discovery"
+      ],
+      "purchase_barrier": "HIDDEN_IN_UI",
+      "unmet_need": null,
+      "summary": "Customer appreciates Zepto's delivery speed but is deterred from buying household items due to lack of visible bundled discounts."
+    }
+  },
+  {
+    "source": "reddit",
+    "app_name": "Zepto",
+    "post_id": "rd_101",
+    "subreddit": "r/india",
+    "title": "Why is Zepto's fresh produce category so hidden in the app?",
+    "content": "I usually order chips and cold drinks from Zepto. Yesterday I tried looking for organic vegetables, but the app keeps recommending me snacks instead. Anyone else feel the discovery for non-snack categories is poor?",
+    "score": 142,
+    "num_comments": 38,
+    "permalink": "https://reddit.com/r/india/comments/zepto_produce_discovery",
+    "created_utc": 1721500000,
+    "cleaned_content": "I usually order chips and cold drinks from Zepto. Yesterday I tried looking for organic vegetables, but the app keeps recommending me snacks instead. Anyone else feel the discovery for non-snack categories is poor?",
+    "ai_enrichment": {
+      "sentiment": "NEGATIVE",
+      "target_category": "Produce",
+      "aspects": [
+        "search_discovery"
+      ],
+      "purchase_barrier": "HIDDEN_IN_UI",
+      "unmet_need": "organic vegetables",
+      "summary": "Customer had difficulty finding organic vegetables due to poor search discovery on the Zepto app."
+    }
+  },
+  {
+    "source": "reddit",
+    "app_name": "Zepto",
+    "ticket_id": "rd_102",
+    "subreddit": "r/Bangalore",
+    "title": "Zepto daily essentials vs local supermarket price comparison",
+    "content": "Zepto delivery speed is great for emergency snacks, but for monthly household cleaning items, I rarely buy from them because they don't show bundled discounts on the homepage.",
+    "score": 89,
+    "num_comments": 22,
+    "permalink": "https://reddit.com/r/Bangalore/comments/zepto_household_discounts",
+    "created_utc": 1721510000,
+    "cleaned_content": "Zepto delivery speed is great for emergency snacks, but for monthly household cleaning items, I rarely buy from them because they don't show bundled discounts on the homepage.",
+    "ai_enrichment": {
+      "sentiment": "NEUTRAL",
+      "target_category": "Household",
+      "aspects": [
+        "delivery_speed",
+        "search_discovery"
+      ],
+      "purchase_barrier": "HIDDEN_IN_UI",
+      "unmet_need": null,
+      "summary": "Customer appreciates Zepto's delivery speed but is deterred from buying household items due to lack of visible bundled discounts."
+    }
+  },
+  {
+    "source": "twitter_x",
+    "app_name": "Zepto",
+    "post_id": "tw_201",
+    "author_handle": "@tech_shopper_in",
+    "content": "Zepto's 10-minute delivery is fast, but why doesn't the app recommend gourmet coffee when I buy milk every morning? Missed cross-selling opportunity! #ZeptoApp",
+    "likes": 45,
+    "retweets": 12,
+    "created_at": "2026-07-20T14:20:00Z",
+    "cleaned_content": "Zepto's 10-minute delivery is fast, but why doesn't the app recommend gourmet coffee when I buy milk every morning? Missed cross-selling opportunity! #ZeptoApp",
+    "ai_enrichment": {
+      "sentiment": "NEUTRAL",
+      "target_category": "Gourmet",
+      "aspects": [
+        "search_discovery"
+      ],
+      "purchase_barrier": "HIDDEN_IN_UI",
+      "unmet_need": "Gourmet coffee recommendation",
+      "summary": "Customer appreciates fast delivery but feels the app misses cross-selling opportunities for related products like gourmet coffee."
+    }
+  },
+  {
+    "source": "twitter_x",
+    "app_name": "Zepto",
+    "post_id": "tw_202",
+    "author_handle": "@delhi_foodie",
+    "content": "Lately I noticed Zepto added a new bakery section, but it's buried under 3 sub-menus in the app. Had to search manually. Fix your catalog UI! @ZeptoNow",
+    "likes": 110,
+    "retweets": 28,
+    "created_at": "2026-07-21T08:10:00Z",
+    "cleaned_content": "Lately I noticed Zepto added a new bakery section, but it's buried under 3 sub-menus in the app. Had to search manually. Fix your catalog UI! @ZeptoNow",
+    "ai_enrichment": {
+      "sentiment": "NEGATIVE",
+      "target_category": "Bakery",
+      "aspects": [
+        "search_discovery"
+      ],
+      "purchase_barrier": "HIDDEN_IN_UI",
+      "unmet_need": null,
+      "summary": "Customer is frustrated with the app's catalog UI, having to search manually for the new bakery section buried under sub-menus."
+    }
+  },
+  {
+    "source": "twitter_x",
+    "app_name": "Zepto",
+    "post_id": "tw_201",
+    "author_handle": "@tech_shopper_in",
+    "content": "Zepto's 10-minute delivery is fast, but why doesn't the app recommend gourmet coffee when I buy milk every morning? Missed cross-selling opportunity! #ZeptoApp",
+    "likes": 45,
+    "retweets": 12,
+    "created_at": "2026-07-20T14:20:00Z",
+    "cleaned_content": "Zepto's 10-minute delivery is fast, but why doesn't the app recommend gourmet coffee when I buy milk every morning? Missed cross-selling opportunity! #ZeptoApp",
+    "ai_enrichment": {
+      "sentiment": "NEUTRAL",
+      "target_category": "Dairy",
+      "aspects": [
+        "search_discovery"
+      ],
+      "purchase_barrier": "HIDDEN_IN_UI",
+      "unmet_need": "Gourmet coffee recommendation",
+      "summary": "Customer appreciates fast delivery but feels the app misses cross-selling opportunities for related products like gourmet coffee."
+    }
+  },
+  {
+    "source": "twitter_x",
+    "app_name": "Zepto",
+    "post_id": "tw_202",
+    "author_handle": "@delhi_foodie",
+    "content": "Lately I noticed Zepto added a new bakery section, but it's buried under 3 sub-menus in the app. Had to search manually. Fix your catalog UI! @ZeptoNow",
+    "likes": 110,
+    "retweets": 28,
+    "created_at": "2026-07-21T08:10:00Z",
+    "cleaned_content": "Lately I noticed Zepto added a new bakery section, but it's buried under 3 sub-menus in the app. Had to search manually. Fix your catalog UI! @ZeptoNow",
+    "ai_enrichment": {
+      "sentiment": "NEGATIVE",
+      "target_category": "Bakery",
+      "aspects": [
+        "search_discovery"
+      ],
+      "purchase_barrier": "HIDDEN_IN_UI",
+      "unmet_need": null,
+      "summary": "Customer is frustrated with the app's catalog UI, having to manually search for the new bakery section buried under sub-menus."
+    }
+  },
+  {
+    "source": "twitter_x",
+    "app_name": "Zepto",
+    "post_id": "tw_201",
+    "author_handle": "@tech_shopper_in",
+    "content": "Zepto's 10-minute delivery is fast, but why doesn't the app recommend gourmet coffee when I buy milk every morning? Missed cross-selling opportunity! #ZeptoApp",
+    "likes": 45,
+    "retweets": 12,
+    "created_at": "2026-07-20T14:20:00Z",
+    "cleaned_content": "Zepto's 10-minute delivery is fast, but why doesn't the app recommend gourmet coffee when I buy milk every morning? Missed cross-selling opportunity! #ZeptoApp",
+    "ai_enrichment": {
+      "sentiment": "NEUTRAL",
+      "target_category": "Dairy",
+      "aspects": [
+        "search_discovery"
+      ],
+      "purchase_barrier": "HIDDEN_IN_UI",
+      "unmet_need": "Gourmet coffee recommendation",
+      "summary": "Customer appreciates fast delivery but feels the app misses cross-selling opportunities for related products like gourmet coffee."
+    }
+  },
+  {
+    "source": "twitter_x",
+    "app_name": "Zepto",
+    "post_id": "tw_202",
+    "author_handle": "@delhi_foodie",
+    "content": "Lately I noticed Zepto added a new bakery section, but it's buried under 3 sub-menus in the app. Had to search manually. Fix your catalog UI! @ZeptoNow",
+    "likes": 110,
+    "retweets": 28,
+    "created_at": "2026-07-21T08:10:00Z",
+    "cleaned_content": "Lately I noticed Zepto added a new bakery section, but it's buried under 3 sub-menus in the app. Had to search manually. Fix your catalog UI! @ZeptoNow",
+    "ai_enrichment": {
+      "sentiment": "POSITIVE",
+      "target_category": null,
+      "aspects": [
+        "pricing"
+      ],
+      "purchase_barrier": "HIDDEN_IN_UI",
+      "unmet_need": null,
+      "summary": "Lately I noticed Zepto added a new bakery section, but it's buried under 3 sub-menus in the app. Had"
+    }
+  },
+  {
+    "id": "trustpilot_1",
+    "source": "Trustpilot",
+    "content": "Great customer service when organic produce freshness was off. Refund was instant, but I still hesitate to try new gourmet food categories.",
+    "sentiment": "neutral",
+    "barrier": "QUALITY_CONCERN",
+    "cleaned_content": "Great customer service when organic produce freshness was off. Refund was instant, but I still hesitate to try new gourmet food categories.",
+    "ai_enrichment": {
+      "sentiment": "NEUTRAL",
+      "target_category": "Produce",
+      "aspects": [
+        "item_quality",
+        "customer_service"
+      ],
+      "purchase_barrier": "QUALITY_CONCERN",
+      "unmet_need": null,
+      "summary": "Customer had an issue with organic produce freshness but received great customer service and an instant refund."
+    }
+  },
+  {
+    "id": "yt_1",
+    "source": "YouTube",
+    "url": "https://www.youtube.com/watch?v=mock1",
+    "author": "TechVlogIndia",
+    "content": "Zepto grocery delivery is super fast, but why is pet food so expensive here compared to my local pet store? I'd rather buy groceries here and buy dog food offline.",
+    "sentiment": "neutral",
+    "barrier": "HIGH_PRICE",
+    "cleaned_content": "Zepto grocery delivery is super fast, but why is pet food so expensive here compared to my local pet store? I'd rather buy groceries here and buy dog food offline.",
+    "ai_enrichment": {
+      "sentiment": "NEUTRAL",
+      "target_category": "Household",
+      "aspects": [
+        "price"
+      ],
+      "purchase_barrier": "HIGH_PRICE",
+      "unmet_need": null,
+      "summary": "Customer appreciates Zepto's fast grocery delivery but finds pet food prices to be higher compared to local stores."
+    }
+  },
+  {
+    "id": "yt_2",
+    "source": "YouTube",
+    "url": "https://www.youtube.com/watch?v=mock2",
+    "author": "QuickCommCritic",
+    "content": "Tested Zepto's Gourmet cheese block. The quality is fine, but they only sell a 500g block. Why can't we get smaller trial sizes for gourmet cheese?",
+    "sentiment": "negative",
+    "barrier": "PACK_SIZE_TOO_LARGE",
+    "cleaned_content": "Tested Zepto's Gourmet cheese block. The quality is fine, but they only sell a 500g block. Why can't we get smaller trial sizes for gourmet cheese?",
+    "ai_enrichment": {
+      "sentiment": "NEUTRAL",
+      "target_category": "Gourmet",
+      "aspects": [
+        "item_quality",
+        "pack_size"
+      ],
+      "purchase_barrier": "PACK_SIZE_TOO_LARGE",
+      "unmet_need": "smaller trial sizes for gourmet cheese",
+      "summary": "Customer is satisfied with the quality of Zepto's gourmet cheese but wishes for smaller pack sizes."
+    }
+  },
+  {
+    "source": "zendesk",
+    "app_name": "Zepto",
+    "ticket_id": 10001,
+    "subject": "Cannot find organic fruits in search",
+    "description": "I tried searching for organic apples on the Zepto app, but only standard apples show up. Is there an organic category?",
+    "category": "search_issue",
+    "created_at": "2026-07-20T10:15:00Z",
+    "cleaned_content": "I tried searching for organic apples on the Zepto app, but only standard apples show up. Is there an organic category?",
+    "ai_enrichment": {
+      "sentiment": "NEUTRAL",
+      "target_category": "Produce",
+      "aspects": [
+        "search_discovery"
+      ],
+      "purchase_barrier": "LIMITED_VARIETY",
+      "unmet_need": "Organic apples",
+      "summary": "Customer unable to find organic apples on the Zepto app"
+    }
+  },
+  {
+    "source": "zendesk",
+    "app_name": "Zepto",
+    "ticket_id": 10002,
+    "subject": "High price for gourmet cheese",
+    "description": "I wanted to try imported cheese from the gourmet section, but the minimum pack size is 500g which is too big and expensive for trial.",
+    "category": "pricing_pack_size",
+    "created_at": "2026-07-20T11:42:00Z",
+    "cleaned_content": "I wanted to try imported cheese from the gourmet section, but the minimum pack size is 500g which is too big and expensive for trial.",
+    "ai_enrichment": {
+      "sentiment": "NEGATIVE",
+      "target_category": "Gourmet",
+      "aspects": [
+        "pack_size"
+      ],
+      "purchase_barrier": "PACK_SIZE_TOO_LARGE",
+      "unmet_need": "smaller pack size for trial",
+      "summary": "Customer couldn't buy imported cheese due to large pack size.\n"
+    }
+  },
+  {
+    "source": "zendesk",
+    "app_name": "Zepto",
+    "ticket_id": 10001,
+    "subject": "Cannot find organic fruits in search",
+    "description": "I tried searching for organic apples on the Zepto app, but only standard apples show up. Is there an organic category?",
+    "category": "search_issue",
+    "created_at": "2026-07-20T10:15:00Z",
+    "cleaned_content": "I tried searching for organic apples on the Zepto app, but only standard apples show up. Is there an organic category?",
+    "ai_enrichment": {
+      "sentiment": "NEUTRAL",
+      "target_category": "Produce",
+      "aspects": [
+        "search_discovery"
+      ],
+      "purchase_barrier": "LIMITED_VARIETY",
+      "unmet_need": "organic apples",
+      "summary": "Customer unable to find organic apples on the Zepto app"
+    }
+  },
+  {
+    "source": "zendesk",
+    "app_name": "Zepto",
+    "ticket_id": 10002,
+    "subject": "High price for gourmet cheese",
+    "description": "I wanted to try imported cheese from the gourmet section, but the minimum pack size is 500g which is too big and expensive for trial.",
+    "category": "pricing_pack_size",
+    "created_at": "2026-07-20T11:42:00Z",
+    "cleaned_content": "I wanted to try imported cheese from the gourmet section, but the minimum pack size is 500g which is too big and expensive for trial.",
+    "ai_enrichment": {
+      "sentiment": "NEGATIVE",
+      "target_category": "Gourmet",
+      "aspects": [
+        "pack_size",
+        "price"
+      ],
+      "purchase_barrier": "PACK_SIZE_TOO_LARGE",
+      "unmet_need": "smaller pack size for trial",
+      "summary": "Customer couldn't buy imported cheese due to large pack size and high price."
+    }
+  },
+  {
+    "source": "zendesk",
+    "app_name": "Zepto",
+    "ticket_id": 10001,
+    "subject": "Cannot find organic fruits in search",
+    "description": "I tried searching for organic apples on the Zepto app, but only standard apples show up. Is there an organic category?",
+    "category": "search_issue",
+    "created_at": "2026-07-20T10:15:00Z",
+    "cleaned_content": "I tried searching for organic apples on the Zepto app, but only standard apples show up. Is there an organic category?",
+    "ai_enrichment": {
+      "sentiment": "NEUTRAL",
+      "target_category": "Produce",
+      "aspects": [
+        "search_discovery"
+      ],
+      "purchase_barrier": "LIMITED_VARIETY",
+      "unmet_need": "organic apples",
+      "summary": "Customer unable to find organic apples on the Zepto app"
+    }
+  },
+  {
+    "source": "zendesk",
+    "app_name": "Zepto",
+    "ticket_id": 10002,
+    "subject": "High price for gourmet cheese",
+    "description": "I wanted to try imported cheese from the gourmet section, but the minimum pack size is 500g which is too big and expensive for trial.",
+    "category": "pricing_pack_size",
+    "created_at": "2026-07-20T11:42:00Z",
+    "cleaned_content": "I wanted to try imported cheese from the gourmet section, but the minimum pack size is 500g which is too big and expensive for trial.",
+    "ai_enrichment": {
+      "sentiment": "NEGATIVE",
+      "target_category": "Gourmet",
+      "aspects": [
+        "pack_size",
+        "price"
+      ],
+      "purchase_barrier": "PACK_SIZE_TOO_LARGE",
+      "unmet_need": "smaller pack size for trial",
+      "summary": "Customer couldn't buy imported cheese due to large pack size and high price.\n"
+    }
+  },
+  {
+    "source": "zendesk",
+    "app_name": "Zepto",
+    "ticket_id": 10001,
+    "subject": "Cannot find organic fruits in search",
+    "description": "I tried searching for organic apples on the Zepto app, but only standard apples show up. Is there an organic category?",
+    "category": "search_issue",
+    "created_at": "2026-07-20T10:15:00Z",
+    "cleaned_content": "I tried searching for organic apples on the Zepto app, but only standard apples show up. Is there an organic category?",
+    "ai_enrichment": {
+      "sentiment": "NEUTRAL",
+      "target_category": "Produce",
+      "aspects": [
+        "search_discovery"
+      ],
+      "purchase_barrier": "LIMITED_VARIETY",
+      "unmet_need": "organic apples",
+      "summary": "Customer unable to find organic apples on the Zepto app"
+    }
+  },
+  {
+    "source": "zendesk",
+    "app_name": "Zepto",
+    "ticket_id": 10002,
+    "subject": "High price for gourmet cheese",
+    "description": "I wanted to try imported cheese from the gourmet section, but the minimum pack size is 500g which is too big and expensive for trial.",
+    "category": "pricing_pack_size",
+    "created_at": "2026-07-20T11:42:00Z",
+    "cleaned_content": "I wanted to try imported cheese from the gourmet section, but the minimum pack size is 500g which is too big and expensive for trial.",
+    "ai_enrichment": {
+      "sentiment": "NEGATIVE",
+      "target_category": "Gourmet",
+      "aspects": [
+        "pack_size",
+        "price"
+      ],
+      "purchase_barrier": "PACK_SIZE_TOO_LARGE",
+      "unmet_need": "smaller pack size for trial",
+      "summary": "Customer couldn't buy imported cheese due to large pack size and high price."
+    }
+  },
+  {
+    "source": "zendesk",
+    "app_name": "Zepto",
+    "ticket_id": 10001,
+    "subject": "Cannot find organic fruits in search",
+    "description": "I tried searching for organic apples on the Zepto app, but only standard apples show up. Is there an organic category?",
+    "category": "search_issue",
+    "created_at": "2026-07-20T10:15:00Z",
+    "cleaned_content": "I tried searching for organic apples on the Zepto app, but only standard apples show up. Is there an organic category?",
+    "ai_enrichment": {
+      "sentiment": "NEUTRAL",
+      "target_category": "Produce",
+      "aspects": [
+        "search_discovery"
+      ],
+      "purchase_barrier": "LIMITED_VARIETY",
+      "unmet_need": "organic apples",
+      "summary": "Customer unable to find organic apples on the Zepto app"
+    }
+  },
+  {
+    "source": "zendesk",
+    "app_name": "Zepto",
+    "ticket_id": 10002,
+    "subject": "High price for gourmet cheese",
+    "description": "I wanted to try imported cheese from the gourmet section, but the minimum pack size is 500g which is too big and expensive for trial.",
+    "category": "pricing_pack_size",
+    "created_at": "2026-07-20T11:42:00Z",
+    "cleaned_content": "I wanted to try imported cheese from the gourmet section, but the minimum pack size is 500g which is too big and expensive for trial.",
+    "ai_enrichment": {
+      "sentiment": "NEGATIVE",
+      "target_category": "Gourmet",
+      "aspects": [
+        "pack_size",
+        "price"
+      ],
+      "purchase_barrier": "PACK_SIZE_TOO_LARGE",
+      "unmet_need": "smaller pack size for trial",
+      "summary": "Customer couldn't buy imported cheese due to large pack size and high price.\n"
+    }
+  },
+  {
+    "source": "zendesk",
+    "app_name": "Zepto",
+    "ticket_id": 10001,
+    "subject": "Cannot find organic fruits in search",
+    "description": "I tried searching for organic apples on the Zepto app, but only standard apples show up. Is there an organic category?",
+    "category": "search_issue",
+    "created_at": "2026-07-20T10:15:00Z",
+    "cleaned_content": "I tried searching for organic apples on the Zepto app, but only standard apples show up. Is there an organic category?",
+    "ai_enrichment": {
+      "sentiment": "NEUTRAL",
+      "target_category": "Produce",
+      "aspects": [
+        "search_discovery"
+      ],
+      "purchase_barrier": "LIMITED_VARIETY",
+      "unmet_need": "organic apples",
+      "summary": "Customer unable to find organic apples on the Zepto app"
+    }
+  },
+  {
+    "source": "zendesk",
+    "app_name": "Zepto",
+    "ticket_id": 10002,
+    "subject": "High price for gourmet cheese",
+    "description": "I wanted to try imported cheese from the gourmet section, but the minimum pack size is 500g which is too big and expensive for trial.",
+    "category": "pricing_pack_size",
+    "created_at": "2026-07-20T11:42:00Z",
+    "cleaned_content": "I wanted to try imported cheese from the gourmet section, but the minimum pack size is 500g which is too big and expensive for trial.",
+    "ai_enrichment": {
+      "sentiment": "NEGATIVE",
+      "target_category": "Gourmet",
+      "aspects": [
+        "pack_size",
+        "price"
+      ],
+      "purchase_barrier": "PACK_SIZE_TOO_LARGE",
+      "unmet_need": "smaller pack size for trial",
+      "summary": "Customer couldn't buy imported cheese due to large pack size and high price."
+    }
+  }
+]
