@@ -89,7 +89,7 @@ The Zepto AI Discovery Engine features a premium desktop dashboard designed spec
   * Cohort profiles for **Routine Buyers**, **Explorers**, **Deal Seekers**, **Families**, and **Premium Users** (tracking size, behavior, exploration probability, and category preference).
 * **Growth Opportunity Engine**:
   * Actionable category transitions: Grocery $\rightarrow$ Personal Care, Snacks $\rightarrow$ Beverages, and Household $\rightarrow$ Baby Care.
-* **UI Design Direction**: Glowing Dark Glassmorphism workspace theme (deep purple/blue backgrounds, cyan/mint accents, electric pink highlights) with rounded cards, glowing soft shadows, and translucent glassmorphic panels.
+* **UI Design Direction**: Glowing Dark Glassmorphism workspace theme (deep purple/blue backgrounds, cyan/mint accents, electric pink highlights) with rounded cards, glowing soft shadows, translucent glassmorphic panels, and enhanced typography legibility (featuring 16px quote font-sizes and 13px friction/affinity badge tag sizing with 4px 8px padding).
 * **Production Scheduler & Drift Monitoring**:
   * Automated background daemon scheduling ingestion and processing runs at exactly **10:00 AM IST daily**.
   * Auto-validation checks verifying schema compliance, cleaning PII, and raising alerts on model response anomalies.

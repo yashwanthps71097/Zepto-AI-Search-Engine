@@ -71,6 +71,7 @@ This document outlines the complete implementation roadmap and phase-wise delive
     * Left sidebar navigation (Dashboard, Data Sources, AI Insights, Customer Behavior, User Segments, Category Opportunities, Growth Actions).
     * Overview cards tracking 128K+ conversations, 92% confidence score, 24 emerging needs, and 18 categories.
     * Interactive feedback intelligence panels, visual line/bar/heatmap charts, dynamic AI insight cards, a 90-day sentiment area wave tracker, and hover tooltips on all segments.
+    * High-legibility typography improvements (16px audit log quotes, 13px friction tags and affinity badges with 4px 8px padding).
 * **Deliverables:**
   * Live premium web dashboard served at `http://localhost:8080`.
   * Analytics summary dataset saved at `data/analytics_summary.json`.
