@@ -1006,6 +1006,18 @@ body::after {
     break-inside: avoid !important;
   }
 
+  .insight-card h4 {
+    color: #1A202C !important;
+  }
+
+  .insight-card p {
+    color: #4A5568 !important;
+  }
+
+  .insight-footer {
+    color: #718096 !important;
+  }
+
   /* Dashboard grid layout */
   .dashboard-grid {
     display: grid !important;
@@ -1043,6 +1055,34 @@ body::after {
     border: 1px solid #CBD5E0 !important;
   }
 
+  /* User Segmentation styles for print */
+  .segment-info strong {
+    color: #1A202C !important;
+  }
+
+  .segment-info span {
+    color: #4A5568 !important;
+  }
+
+  .segment-bar {
+    background: #E2E8F0 !important;
+    border: 1px solid #CBD5E0 !important;
+  }
+
+  /* Opportunity Panel styles for print */
+  .opp-item {
+    background: #F7FAFC !important;
+    border: 1px solid #E2E8F0 !important;
+  }
+
+  .opp-transition {
+    color: #1A365D !important; /* Dark blue instead of cyan */
+  }
+
+  .opp-experiment {
+    color: #2D3748 !important; /* Dark grey instead of light grey */
+  }
+
   /* Headings & general text overrides */
   h1, h2, h3, h4, h5, h6 {
     color: #000000 !important;
@@ -1069,6 +1109,12 @@ body::after {
   .area-chart-mock {
     background: #F7FAFC !important;
     border: 1px solid #CBD5E0 !important;
+  }
+
+  /* Global print color adjustment */
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
   }
 
   /* Hide modals/tooltips during print */
