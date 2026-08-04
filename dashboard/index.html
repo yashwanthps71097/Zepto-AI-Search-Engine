@@ -656,42 +656,6 @@
             </div>
           </div>
 
-          <!-- Right: Downstream API Tester -->
-          <div class="grid-card">
-            <div class="card-header">
-              <h3>🔌 Recommendation REST API Sandbox</h3>
-            </div>
-            <p style="font-size: 13px; color: var(--color-text-sub); margin-bottom: 15px;">
-              Query Port <code>8081</code> recommendation endpoint to retrieve live JSON payload payload:
-            </p>
-            
-            <div style="display: flex; flex-direction: column; gap: 12px; margin-bottom: 15px;">
-              <div style="display: flex; gap: 10px;">
-                <div style="flex: 1;">
-                  <label style="font-size: 11px; color: var(--color-text-sub); display: block; margin-bottom: 4px;">User Segment ID</label>
-                  <select id="apiUserCohort" style="width: 100%; background: rgba(0,0,0,0.3); border: 1px solid var(--glass-border); padding: 8px; border-radius: var(--radius-sm); color: #FFF; outline: none;">
-                    <option value="premium_users">Premium User (Sarah J.)</option>
-                    <option value="routine_buyers">Routine Buyer (John D.)</option>
-                    <option value="explorers">Explorer Cohort</option>
-                  </select>
-                </div>
-                <div style="flex: 1;">
-                  <label style="font-size: 11px; color: var(--color-text-sub); display: block; margin-bottom: 4px;">Current Cart Item</label>
-                  <select id="apiCartItem" style="width: 100%; background: rgba(0,0,0,0.3); border: 1px solid var(--glass-border); padding: 8px; border-radius: var(--radius-sm); color: #FFF; outline: none;">
-                    <option value="organic_spinach">Organic Spinach</option>
-                    <option value="potato_chips">Potato Chips</option>
-                    <option value="dishwash_gel">Dishwash Gel</option>
-                  </select>
-                </div>
-              </div>
-              <button class="btn btn-primary" onclick="testPersonalizationAPI()" style="width: 100%; font-size: 12px; padding: 10px;">
-                ⚡ Send Request to Personalization Server
-              </button>
-            </div>
-
-            <!-- API response JSON window -->
-            <pre id="apiResponseText" style="background: rgba(0,0,0,0.4); border: 1px solid var(--glass-border); padding: 12px; border-radius: var(--radius-sm); font-size: 11px; font-family: monospace; overflow-x: auto; max-height: 120px; color: var(--color-accent);">Click the button to test API response...</pre>
-          </div>
 
         </div>
 
