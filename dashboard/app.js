@@ -455,7 +455,7 @@ function updateDateDisplay() {
     const mm = String(today.getMonth() + 1).padStart(2, '0');
     const yyyy = today.getFullYear();
     const dateStr = `${dd}/${mm}/${yyyy}`;
-    dateEl.innerHTML = dateStr;
+    dateEl.innerHTML = `<span class="date-icon">📅</span> ${dateStr}`;
   }
 }
 

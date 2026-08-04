@@ -225,6 +225,13 @@ body::after {
   font-size: 15px;
   font-weight: 600;
   color: #FFFFFF;
+  display: flex;
+  align-items: center;
+}
+
+.date-icon {
+  margin-right: 6px;
+  font-size: 16px;
 }
 
 .btn {
@@ -903,6 +910,10 @@ body::after {
     padding: 0 !important;
     font-size: 14px !important;
     font-weight: 700 !important;
+  }
+
+  .date-icon {
+    display: none !important;
   }
 
   #exportReportBtn,
