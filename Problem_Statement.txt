@@ -43,7 +43,7 @@ Increase the percentage of Monthly Active Customers who purchase products from *
 
 The system surfaces insights through a premium desktop dashboard designed for Zepto's Growth Product Team featuring:
 - **Overview Metrics**: Tracking 128K+ customer conversations analyzed, 92% AI insight confidence, 24 emerging customer needs, and 18 categories tracked.
-- **Left Sidebar Navigation**: Dashboard, Data Sources, AI Insights, Customer Behavior, User Segments, Category Opportunities, and Growth Actions (featuring live A/B campaign controls and REST API sandbox).
+- **Left Sidebar Navigation**: Dashboard, Data Sources, AI Insights, Customer Behavior, User Segments, Category Opportunities, and Growth Actions (featuring live A/B campaign controls).
 - **AI Feedback Intelligence**: Positive vs negative sentiment and summaries across Play Store, App Store, Reddit, Social Media, Forums, and Support tickets (with hover tooltips).
 - **Customer Behavior charts**: Interactive visualizations mapping repeat purchase behavior, category buying patterns, and new category adoption rates (featuring a 90-day sentiment area tracker and interactive hover tooltips).
 - **Dynamic AI Insight Cards**:
