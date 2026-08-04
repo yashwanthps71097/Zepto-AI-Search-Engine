@@ -1037,6 +1037,13 @@ body::after {
     break-inside: avoid !important;
   }
 
+  .funnel-stage {
+    background: #F0F9FF !important;
+    color: #0F4C81 !important;
+    border: 1px solid #BEE3F8 !important;
+    opacity: 1 !important;
+  }
+
   .card-header h3 {
     color: #000000 !important;
   }
