@@ -69,7 +69,7 @@ The Zepto AI Discovery Engine features a premium desktop dashboard designed spec
 * **Top Navigation Bar**:
   * **Header Title**: `"AI-Powered Review Discovery Engine Dashboard"`
   * **Subtitle**: `"AI-powered Customer Insights & Category Growth Intelligence"`
-  * **Controls**: Date range selector (dynamically updated to current client date), Notification icon, User profile, Export report button (active print window trigger).
+  * **Controls**: Date range selector (dynamically updated to current client date with a calendar icon 📅 that is hidden in the exported report to keep print formatting clean), Notification icon, User profile, Export report button (active print window trigger).
 * **Left Sidebar Navigation**:
   * Dashboard, Data Sources, AI Insights, Customer Behavior, User Segments, Category Opportunities, and Growth Actions (with A/B campaign triggers, REST API sandbox, and quality validation).
 * **Overview Analytics Cards**:
